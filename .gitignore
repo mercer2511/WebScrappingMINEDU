@@ -126,7 +126,9 @@ celerybeat.pid
 .env
 .venv
 .junie
-database
+database/alembic.ini
+minedu/descargas/
+pre_procesamiento/extraidos/
 env/
 venv/
 ENV/
