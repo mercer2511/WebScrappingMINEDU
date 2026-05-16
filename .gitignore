@@ -130,6 +130,7 @@ celerybeat.pid
 database/alembic.ini
 minedu/descargas/
 pre_procesamiento/extraidos/
+pre_procesamiento/parquet/
 env/
 venv/
 ENV/
