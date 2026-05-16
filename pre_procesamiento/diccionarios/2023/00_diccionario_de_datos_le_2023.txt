@@ -1,0 +1,3790 @@
+--- PÁGINA 2 ---
+"Año de la unidad, la paz y el desarrollo"
+CÉDULA 11
+LOCAL EDUCATIVO:
+FICHA UNIFICADA DE
+INFRAESTRUCTURA EDUCATIVA
+1
+
+--- PÁGINA 3 ---
+"Año de la unidad, la paz y el desarrollo"
+DESCRIPCIÓN DE LAS TABLAS DE LA CÉDULA
+Los valores de las variables de la Ficha Unificada de Infraestructura Educativa (FUIE) están almacenada en
+diferentes tablas. A continuación, se describen las tablas y su relación con las preguntas de las cédulas.
+Las preguntas lineales de toda la cédula están incorporadas en dos tablas:
+1. Loc_Lineal_1.dbf: Desde Variable “PERIODO” hasta el Variable “P122_1” (pregunta 122.1.
+¿Cuenta con la disponibilidad de un nuevo terreno que ha sido gestionado para el traslado de la IE?).
+2. Loc_Lineal_2.dbf: Desde Variable “P201_1” (Pregunta 201. Servicios en el Centro Poblado - 1.
+Energía eléctrica) hasta el Variable “ANOTACIONES”.
+Loc_P101_Nivel.dbf: Detalla información registrada en la pregunta 101. Servicios
+niveles/educativos que funcionan en el local educativo.
+Loc_P102_Carrer.dbf: Detalla información registrada en la pregunta 102. Listado de carreras o
+programas de estudio ofrecidos en este local educativo por el instituto o escuela de educación
+superior.
+Loc_P106_ATech.dbf: Detalla información registrada en la pregunta 106.1. Área techada por
+terreno, edificación y piso.
+Loc_P107_Topog.dbf: Detalla información registrada en la pregunta 107. Levantamiento
+Topográfico.
+Loc_P108_SaFiLe.dbf: Detalla información registrada en la pregunta 108.1. La condición de
+tenencia del terreno que ocupa el local educativo es:
+Loc_P114_Tramo.dbf: Detalla información registrada en la pregunta 114. ¿Con cuántos tramos
+cuenta el perímetro del terreno del local educativo?
+Loc_P117_Trayec.dbf: Detalla información registrada en las preguntas 117.1. Traslado desde la
+UGEL al Local Educativo y 117.3. Traslado desde la capital distrital al local educativo
+Loc_P200_ServBa.dbf: Detalla información registrada en las preguntas 202. Procedencia del
+abastecimiento de agua, 206. Tipo de conexión de desagüe y 207. Procedencia de la energía eléctrica.
+Loc_P222_Inter.dbf: Detalla información registrada en la pregunta 222.3 Líneas contratadas en el
+local educativo.
+Loc_P302_Cerco.dbf: Detalla información registrada en la pregunta 302. Número de tramos del
+cerco perimétrico.
+Loc_P303_OtElem.dbf: Detalla información registrada en la pregunta 303. Otros elementos en el
+local educativo.
+Loc_P401_Edific.dbf: Detalla información registrada en la pregunta 401. Edificaciones en el local
+educativo.
+Loc_P501_Aulas.dbf: Detalla información registrada en la pregunta 501. Número de aulas o
+espacios acondicionados como aulas.
+2
+
+--- PÁGINA 4 ---
+"Año de la unidad, la paz y el desarrollo"
+Loc_P601_OtEsp.dbf: Detalla información registrada en la pregunta 601. Cantidad de otros
+espacios educativos y de soporte distintos al aula.
+Loc_P605_OtEspA.dbf: Detalla información registrada en la pregunta 605. Respecto a los espacios
+deportivos abiertos y espacios exteriores/de relación con la naturaleza.
+Loc_P701_SSHH.dbf: Detalla información registrada en la pregunta 701. Cantidad de espacios
+usados como servicios higiénicos.
+Loc_P801_RecTec.dbf: Detalla información registrada en la pregunta 801. Recursos Tecnológicos.
+Loc_P802_Equip.dbf: Detalla información registrada en la pregunta 802. Equipamiento.
+Loc_P803_IntPro.dbf: Detalla información registrada en la pregunta 803. Equipos de interconexión
+y Protección de energía.
+Loc_P901_EduAdm.dbf: Detalla información registrada en la pregunta 901. Respecto a los
+espacios educativos y/o administrativos, indique.
+ESTRUCTURA DE LAS TABLAS
+Variable: Nombre de la variable que permite identificar uno o más datos.
+Tipo: Tipo de dato que se almacena en el Variable, estos pueden ser:
+➢ “C”: Carácter, representan datos con valores de tipo carácter.
+➢ “N”: Numérico, representan datos con valores numéricos.
+Long: Longitud o tamaño del Variable.
+Descripción de Variable: Especificación detallada de la pregunta vinculada a la Variable.
+Valor de variable: Permite mostrar el o los posibles valores que pueda tener el Variable.
+Formato: Es la unión de “Tipo” seguido de “Long” entre paréntesis, y es usado para dar a conocer
+el tipo y el tamaño establecido para una determinada variable.
+Ejemplo:
+3
+
+--- PÁGINA 5 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+PERIODO C (4) Periodo de aplicación del censo educativo 2023
+CODLOCAL C (6) Código de Local Educativo 999999
+CODGEO C (6) Código de Ubicación Geográfica 999999
+CODUGEL C (6) Código de Dependencia Administrativa Códigos de
+DRE/GRE/UGEL
+DPTO C (30) 1. Departamento Texto
+PROV C (45) 2. Provincia Texto
+DISTRITO C (60) 3. Distrito Texto
+AMBITO C (4) 4. Dependencia Administrativa GRE / DRE / UGEL
+REDEDUCA C (30) 5. Nombre de Dependencia Administrativa Texto
+CEN_POB C (80) 6. Nombre del Centro Poblado Texto
+CATEG_CP C (1) 6. Nombre del Centro Poblado (1:6)
+Tipo de Centro Poblado
+1: Caserío
+2: Pueblo
+3: Villa
+4: Ciudad
+5: Comunidad
+6: Anexo
+NOMLUGAR C (60) 7. Núcleo Urbano Texto
+CATEG_LG C (2) 7. Núcleo Urbano (01:11)
+Tipo de Núcleo Urbano
+01: Cercado
+02: Urbanización
+03: Barrio
+04: Complejo Hab.
+05: Unidad Vec.
+06: Asoc. Vivienda
+07: Coop. Vivienda
+08: Ciudadela
+09: AA. HH.
+10: Pueblo Joven
+11: Otro
+TIPOVIA C (1) 8. Dirección principal del Local Educativo (1:9)
+Tipo de Vía
+1: Avenida
+2: Calle
+3: Jirón
+4: Pasaje
+5: Autopista
+6: Carretera
+7: Alameda
+8: Parque
+9: Otro
+4
+
+--- PÁGINA 6 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+NOMBVIA C (80) 8. Dirección principal del Local Educativo Texto
+Nombre de Vía
+NUMERO C (20) Dirección principal del Local Educativo (0:9),(A:Z)
+Número de puerta
+MANZANA C (10) 8. Dirección principal del Local Educativo (0:9),(A:Z)
+Manzana
+LOTE C (15) 8. Dirección principal del Local Educativo (0:9)
+Lote
+SECTOR C (30) 8. Dirección principal del Local Educativo (0:9)
+Sector
+ZONA C (15) 8. Dirección principal del Local Educativo (0:9),(A:Z)
+Zona
+ETAPA C (15) 8. Dirección principal del Local Educativo (0:9),(A:Z)
+Etapa
+OTROS C (30) 8. Dirección principal del Local Educativo Texto
+Otro
+REFERENCIA C (200) 9. Referencia de la dirección del Local Educativo Texto
+LATITUD N (15,8) 10. Puntos de Georreferenciación 999999.99999999
+Latitud
+LONGITUD N (15,8) 10. Puntos de Georreferenciación 999999.99999999
+Longitud
+ALTITUD N (6) 10. Puntos de Georreferenciación 999999
+Altura
+CLIMA C (1) 11. Clima (1:9)
+1: Desértico costero / marino
+2: Desértico
+3: Interandino bajo
+4: Mesoandino
+5: Altoandino
+6: Nevado
+7: Ceja de montaña
+8: Subtropical húmedo
+9: Tropical húmedo
+ESTADOCON C (1) 12.1. El local educativo se encuentra en etapa de 1: Sí
+construcción/reconstrucción? 2: No
+SITUACION C (1) 12.1. El local educativo se encuentra en etapa de 1: Total
+construcción/reconstrucción? 2: Parcial
+Situación
+AAMM_INI C (10) 12.2. Sobre la construcción/reconstrucción del local AAAA-MM
+educativo
+- ¿Cuándo inicio la construcción/reconstrucción?
+Año - Mes
+5
+
+--- PÁGINA 7 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+AAMM_ENT C (10) 12.2. Sobre la construcción/reconstrucción del local AAAA-MM
+educativo
+- ¿Cuándo concluirá la construcción/reconstrucción?
+Año - Mes
+ENTI_FINA C (1) 12.3. ¿Qué entidad está financiando la (1:6)
+construcción/reconstrucción del local educativo?
+1: MINEDU
+2: Gobierno Regional
+3: Gobierno Local
+4: Otro sector del estado
+5: Empresa privada
+6: Otro
+ESP_SECTOR C (80) 12.3. ¿Qué entidad está financiando la Texto
+construcción/reconstrucción del local educativo?
+4: Otro sector del estado --- Especificar
+ESP_OTROS C (80) 12.3. ¿Qué entidad está financiando la Texto
+construcción/reconstrucción del local educativo?
+6: Otro --- Especificar
+USO_LOCAL C (1) 12.4. El/los servicios educativos ¿se encuentran (1:3)
+funcionando en otro predio, mientras se concluye la
+construcción/reconstrucción de su local educativo?
+1: Sí, todos
+2: Sí Algunos
+3: No
+DND_LOCAL C (1) 12.4. El/los servicios educativos ¿se encuentran “X”
+funcionando en otro predio, mientras se concluye la
+construcción/reconstrucción de su local educativo?
+1: Sí, todos
+¿Dónde?
+1: En otro local educativo
+DND_VPRIV C (1) 12.4. El/los servicios educativos ¿se encuentran “X”
+funcionando en otro predio, mientras se concluye la
+construcción/reconstrucción de su local educativo?
+1: Sí, todos
+¿Dónde?
+2: En una vivienda privada
+DND_PESCO C (1) 12.4. El/los servicios educativos ¿se encuentran “X”
+funcionando en otro predio, mientras se concluye la
+construcción/reconstrucción de su local educativo?
+1: Sí, todos
+¿Dónde?
+3: En un parque / estadio / coliseo
+6
+
+--- PÁGINA 8 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+DND_OTRO C (1) 12.4. El/los servicios educativos “X”
+¿se encuentran funcionando en
+otro predio, mientras se concluye
+la construcción/reconstrucción de
+su local educativo?
+1: Sí, todos
+¿Dónde?
+4: Otro
+ESP_LUGAR C (80) 12.4. El/los servicios educativos Texto
+¿se encuentran funcionando en
+otro predio, mientras se concluye
+la construcción/reconstrucción de
+su local educativo?
+1: Sí, todos ¿Dónde?
+4: Otro --- Especificar
+Archivo : Loc_P101_Nivel.dbf [ Matriz 01 : Niveles ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C101
+N_ORD N (2) Número de orden 99
+COD_MOD C (7) 1. Código modular del Servicio Id del Servicio Educativo
+Educativo
+ANEXO C (1) 2. Número de Anexo Id de Anexo
+NAME_SER C (100) 3. Nombre del servicio/nivel Texto
+educativo
+GEST_SER C (2) 4. Código de Gestión 01: Pública de Gestión Directa
+02: Pública de Gestión Privada
+03: Gestión Privada
+NIV_MOD C (2) 5. Código de nivel y/o A1: Inicial Cuna
+modalidad del servicio/nivel A2: Inicial Jardín
+educativo A3: Inicial Cuna-Jardín
+B0: Primaria EBR
+F0: Secundaria EBR
+D1: EBA - Inicial e Intermedio
+D2: EBA - Avanzado
+E0: PRITE - Programa de Intervención Temprana
+E1: EBE - Inicial
+E2: EBE - Primaria
+L0: CETPRO - Técnico Productiva
+K0: Educación Superior Pedagógica
+T0: Educación Superior Tecnológica
+M0: Escuela de Formación Artística
+P0: Escuela de Educación Superior Pedagógica
+S0: Escuela de Educación Superior Tecnológica
+7
+
+--- PÁGINA 9 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P101_Nivel.dbf [ Matriz 01 : Niveles ]
+Variable Formato Descripción de variable Valor de variable
+P101_6_1 C (1) 6. Sobre Residencia Estudiantil (RE) 1: Sí
+¿Cuenta con RE? 2: No
+P101_6_2 N (5) 6. Sobre Residencia Estudiantil (RE) 99999
+Cantidad de alumnos en la RE
+P101_7_1 C (1) 7. Sobre el(los) Local(es) Adicional(es) 1: Sí
+¿Cuenta con un Local Adicional? 2: No
+P101_7_2 C (1) 7. Sobre el(los) Local(es) Adicional(es) 1: Sí
+¿Tiene Código de Local Educativo? 2: No
+P101_7_3 C (6) 7. Sobre el(los) Local(es) Adicional(es) 999999
+Código de Local Educativo
+Archivo : Loc_P102_Carrer.dbf [ Matriz 02 : Listado de Carreras o Programas ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de la Pregunta C102
+N_ORD C (2) Número de orden 99
+NIV_SUP C (2) Código de Nivel de Educación Superior No Universitaria K0: Educación
+Superior
+Pedagógica
+T0: Educación
+Superior
+Tecnológica
+M0: Escuela de
+Formación
+Artística
+P0: Escuela de
+Educación
+Superior
+Pedagógica
+S0: Escuela de
+Educación
+Superior
+Tecnológica
+CODCARR C (10) Código de Carrera o Programas ofrecidos en este Local Id Carrera
+Educativo
+NAME_CAR C (150) Nombre de la carrera de Educación Superior No Texto
+Universitaria
+8
+
+--- PÁGINA 10 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P103 N (5) 103. Cantidad de Terrenos que tiene el Local Educativo 99999
+P104 N (5) 104. Cantidad de Edificaciones que tiene el Local Educativo 99999
+P105_QE N (6) 105. Área Total Del Terreno - parte entera 9999999
+P105_QD C (2) 105. Área Total Del Terreno - parte decimal 99
+P106_QE N (6) 106. Área Techada Total - parte entera 9999999
+P106_QD C (2) 106. Área Techada Total - parte decimal 99
+Archivo Loc_P106_ATech.dbf [ Matriz 03 : Área Techada por Terreno, Edificación y Piso ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de la Pregunta C106
+ID_TERR C (4) 1. Código de Terreno "TE" +
+[Correlativo a 2
+dígitos]
+ID_EDIF C (3) 2. Código de Edificación "E" + [Correlativo
+a 2 dígitos]
+P106_3 N (2) 3. Número de Piso 99
+P106_4_1 N (6) 4. Área Techada 999999
+Parte Entera
+P106_4_2 C (2) 4. Área Techada 99
+Parte Decimal
+Archivo : Loc_P107_Topog.dbf [ Matriz 04 : Levantamiento Topográfico ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de la Pregunta C107
+ID_TERR C (4) Código del Terreno "TE" +
+[Correlativo a 2
+dígitos]
+P107_1 C (1) ¿Se cuenta con Estudio Topográfico? 1: Sí
+2: No
+P107_2 N (9,2) Área del terreno según Estudio Topográfico (m2) 999999.99
+P107_3 C (1) El local educativo, ¿ocupa toda el área del terreno? 1: Sí
+2: No
+P107_4 N (9,2) Área que ocupa el local educativo por terreno (m2) 999999.99
+9
+
+--- PÁGINA 11 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P108_SaFiLe.dbf [ Matriz 05 : Saneamiento Físico Legal ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de la Pregunta C108
+ID_TERR C (4) Código del Terreno "TE" + [Correlativo a 2 dígitos]
+P108_1 C (2) La condición de tenencia del terreno que 01: Propio
+ocupa el local educativo es: 02: Alquilado
+03: Prestado
+04: Cedido en uso
+05: Otro
+P108_2 C (1) El terreno, ¿cuenta con saneamiento Físico 1: Sí
+Legal? 2: No
+P108_3 C (2) Documento de posesión del terreno 01: Constancia de Posesión Juez
+de Paz
+02: Constancia de Posesión
+Municipal
+03: Resolución Municipal
+04: Resolución de Afectación De
+Uso
+05: Convenio con Entidad Estatal
+06: Convenio con Particulares
+07: Contrato de Arrendamiento
+08: Contrato de Servidumbre
+09: Otro
+P108_4 C (2) Propietario del terreno 01: Ministerio de Educación
+02: Institución Educativa
+03: Gobierno Nacional
+04: Gobierno Regional
+05: Gobierno Local - Municipalidad
+06: COFOPRI
+07: Comunidades Campesinas,
+Nativas
+08: Propiedad de Terceros
+(Privadas)
+09: No Especifica
+10: Otros
+P108_5 C (1) ¿Se encuentra inscrito en los Registros 1: Sí
+Públicos? 2: No
+P108_6 C (15) N° de Partida Registral (0:9),(A:Z)
+10
+
+--- PÁGINA 12 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P109 C (1) 109. Topografía predominante del terreno (1:4)
+1: Llano (Pendiente 0-8%)
+2: Inclinado (Pendiente 9-25%)
+3: Muy inclinado o desnivelado (Pendiente 26-50%)
+4: Accidentado, irregular o quebrada (Pendiente 51% a
+más)
+P110 C (1) 110. Tipo de suelo predominante del terreno (1:4)
+1: Arena
+2: Arcilla
+3: Grava
+4: Otro
+P111 C (1) 111. El local educativo ¿cuenta con un plan de gestión 1: Sí
+de riesgo de desastres vigente ante un evento 2: No
+adverso? (emergencia o desastre)
+P111_DOC C (1) 111. El local educativo ¿cuenta con un plan de gestión 1: Resolución
+de riesgo de desastres vigente ante un evento 2: Otro
+adverso? (emergencia o desastre)
+- Documento que lo aprueba
+P111_OTRO C (80) 111. El local educativo ¿cuenta con un plan de gestión Texto
+de riesgo de desastres vigente ante un evento
+adverso? (emergencia o desastre)
+- Documento que lo aprueba
+2: Otro --- Especificar
+P111_NDOC C (10) 111. El local educativo ¿cuenta con un plan de gestión 9999999999
+de riesgo de desastres vigente ante un evento
+adverso? (emergencia o desastre)
+- Documento que lo aprueba
+Número de documento
+P111_DESDE C (10) 111. El local educativo ¿cuenta con un plan de gestión DD/MM/AAAA
+de riesgo de desastres vigente ante un evento
+adverso? (emergencia o desastre)
+- Vigencia del plan
+Desde
+P111_HASTA C (10) 111. El local educativo ¿cuenta con un plan de gestión DD/MM/AAAA
+de riesgo de desastres vigente ante un evento
+adverso? (emergencia o desastre)
+- Vigencia del plan
+Hasta
+P112 C (1) 112. ¿Cuenta con Plan de Seguridad del 1: Sí
+Establecimiento? 2: No
+P113 C (1) 113. ¿Cuenta con Plan para la vigilancia, prevención y 1: Sí
+control de la COVID-19? 2: No
+P114 N (2) 114. ¿Con cuántos tramos cuenta el perímetro del 99
+terreno o área asignada al local educativo?
+11
+
+--- PÁGINA 13 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P114_Tramo.dbf [ Matriz 06 : Tramos del perímetro del terreno ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de la Pregunta C114
+N_TRAMO C (2) Número de Tramo 99
+P114_1 N (6) Longitud del tramo (mts) 999999
+- Parte Entera
+P114_2 C (2) Longitud del tramo (mts) 99
+- Parte Decimal
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P115_1_1 C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso "X"
+cuenta el local educativo?
+1. Gradas
+P115_1_2 C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso "X"
+cuenta el local educativo?
+2. Rampa
+P115_1_3 C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso "X"
+cuenta el local educativo?
+3. Directo sin desnivel
+P115_1_4 C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso "X"
+cuenta el local educativo?
+4. Otros
+P115_1_OTR C (80) 115.1. ¿En el ingreso principal, con qué tipo de acceso Texto
+cuenta el local educativo?
+4. Otros --- Especificar
+P115_1_1OK C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso 1: Sí
+cuenta el local educativo? 2: No
+1. Gradas
+¿Cumple con las características de acuerdo a la
+norma?
+P115_1_2OK C (1) 115.1. ¿En el ingreso principal, con qué tipo de acceso 1: Sí
+cuenta el local educativo? 2: No
+2. Rampa
+¿Cumple con las características de acuerdo a la
+norma?
+P115_2_1 C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios "X"
+dentro del local educativo?
+1. Gradas
+P115_2_2 C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios "X"
+dentro del local educativo?
+2. Rampa
+12
+
+--- PÁGINA 14 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P115_2_3 C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios "X"
+dentro del local educativo?
+3. Directo sin Desnivel
+P115_2_4 C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios "X"
+dentro del local educativo?
+4. Otros
+P115_2_OTR C (80) 115.2. ¿Cómo se conectan las edificaciones y espacios Texto
+dentro del local educativo?
+4. Otros --- Especificar
+P115_2_1OK C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios 1: Sí
+dentro del local educativo? 2: No
+1: Gradas
+¿Cumple con las características de acuerdo a la
+norma?
+P115_2_2OK C (1) 115.2. ¿Cómo se conectan las edificaciones y espacios 1: Sí
+dentro del local educativo? 2: No
+2: Rampa
+¿Cumple con las características de acuerdo a la
+norma?
+P116_1 C (1) 116. ¿Su local educativo cuenta con alguna (1:3)
+señalización en la entrada o salida de espacios
+cerrados o espacios comunes correspondiente a las
+medidas preventivas contra el contagio de COVID-19?
+- Señalización sobre el cumplimiento del aforo
+máximo permitido
+1: En todos los espacios cerrados o comunes del
+local
+2: En algunos espacios cerrados o comunes del local
+3: En ningún espacio
+P116_2 C (1) 116. ¿Su local educativo cuenta con alguna (1:3)
+señalización en la entrada o salida de espacios
+cerrados o espacios comunes correspondiente a las
+medidas preventivas contra el contagio de COVID-19?
+- Señalización sobre el distanciamiento físico de 1m
+1: En todos los espacios cerrados o comunes del
+local
+2: En algunos espacios cerrados o comunes del local
+3: En ningún espacio
+P116_3 C (1) 116. ¿Su local educativo cuenta con alguna (1:3)
+señalización en la entrada o salida de espacios
+cerrados o espacios comunes correspondiente a las
+medidas preventivas contra el contagio de COVID-19?
+- Señalización sobre la ventilación natural adecuada
+1: En todos los espacios cerrados o comunes del
+local
+2: En algunos espacios cerrados o comunes del local
+3: En ningún espacio
+13
+
+--- PÁGINA 15 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P116_4 C (1) 116. ¿Su local educativo cuenta con alguna señalización en (1:3)
+la entrada o salida de espacios cerrados o espacios
+comunes correspondiente a las medidas preventivas contra
+el contagio de COVID-19?
+- Señalización sobre el uso correcto de mascarillas
+1: En todos los espacios cerrados o comunes del local
+2: En algunos espacios cerrados o comunes del local
+3: En ningún espacio
+P116_5 C (1) 116. ¿Su local educativo cuenta con alguna señalización en (1:3)
+la entrada o salida de espacios cerrados o espacios
+comunes correspondiente a las medidas preventivas contra
+el contagio de COVID-19?
+- Señalización sobre el lavado o desinfección de manos
+1: En todos los espacios cerrados o comunes del local
+2: En algunos espacios cerrados o comunes del local
+3: En ningún espacio
+P117_1 N (3) 117.1. Traslado desde la UGEL al Local Educativo 999
+¿Cuántos trayectos tiene la ruta que utiliza habitualmente
+para trasladarse desde la UGEL de su jurisdicción hasta el
+local educativo?
+- N° de Trayectos
+P117_2 C (1) 117.2. ¿El local educativo, se encuentra ubicado en la 1: Sí
+capital distrital donde se encuentra la sede de la UGEL? 2: No
+P117_3 N (3) 117.3. Traslado desde la capital distrital al local educativo 999
+¿Cuántos trayectos tiene la ruta que utiliza habitualmente
+para trasladarse desde la capital distrital (plaza de armas)
+hasta el local educativo?
+- N° de Trayectos
+14
+
+--- PÁGINA 16 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P117_Trayec.dbf [ Matriz 07 : Trayectos - UGEL-LE ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (5) Número de la Pregunta C1171
+N_TRAYECTO C (2) Número de Trayecto 99
+HORAS N (3) Tiempo aproximado de recorrido de cada trayecto 999
+- Horas
+MINUTOS N (2) Tiempo aproximado de recorrido de cada trayecto 99
+- Minutos
+MEDIO C (2) Medio de transporte y vía utilizado 01: Vehícular por
+vía asfaltada
+02: Vehícular por
+vía afirmada
+03: Vehícular por
+trocha carrozable
+04: Peatonal
+05: Fluvial
+06: Otro
+Archivo Loc_P117_Trayec.dbf [ Matriz 07 : Trayectos - Capital-LE ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (5) Número de la Pregunta C1173
+N_TRAYECTO C (2) Número de Trayecto 99
+HORAS N (3) Tiempo aproximado de recorrido de cada trayecto 999
+- Horas
+MINUTOS N (2) Tiempo aproximado de recorrido de cada trayecto 99
+- Minutos
+MEDIO C (2) Medio de transporte y vía utilizado 01: Vehícular por
+vía asfaltada
+02: Vehícular por
+vía afirmada
+03: Vehícular por
+trocha
+carrozable
+04: Peatonal
+05: Fluvial
+06: Otro
+15
+
+--- PÁGINA 17 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P118_1 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+1. Cercano al mar
+P118_1_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+1. Cercano al mar
+Distancia aproximada en mts.
+P118_2 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+2. Cercano a un río
+P118_2_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+2. Cercano a un río
+Distancia aproximada en mts.
+P118_3 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+3. Cercano a un volcán
+P118_3_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+3. Cercano a un volcán
+Distancia aproximada en mts.
+P118_4 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+4. Cruce de huayco o quebrada
+P118_4_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+4. Cruce de huayco o quebrada
+Distancia aproximada en mts.
+P118_5 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+5. Acequias o canales de regadio
+P118_5_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+5. Acequias o canales de regadio
+Distancia aproximada en mts.
+P118_6 C (1) 118. Vulnerabilidad por cercanía a factores naturales 1: Sí
+de riesgo (Marcar SI o NO en todas las alternativas) 2: No
+6. Erosión de suelos
+P118_6_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales 999999.99
+de riesgo (Marcar SI o NO en todas las alternativas)
+6. Erosión de suelos
+Distancia aproximada en mts.
+16
+
+--- PÁGINA 18 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P118_7 C (1) 118. Vulnerabilidad por cercanía a factores naturales de 1: Sí
+riesgo (Marcar SI o NO en todas las alternativas) 2: No
+7. Deslizamiento de rocas
+P118_7_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales de 999999.99
+riesgo (Marcar SI o NO en todas las alternativas)
+7. Deslizamiento de rocas
+Distancia aproximada en mts.
+P118_8 C (1) 118. Vulnerabilidad por cercanía a factores naturales de 1: Sí
+riesgo (Marcar SI o NO en todas las alternativas) 2: No
+8. Otro
+P118_8_D N (9,2) 118. Vulnerabilidad por cercanía a factores naturales de 999999.99
+riesgo (Marcar SI o NO en todas las alternativas)
+8. Otro
+Distancia aproximada en mts.
+P118_8_OT C (80) 118. Vulnerabilidad por cercanía a factores naturales de Texto
+riesgo (Marcar SI o NO en todas las alternativas)
+8. Otro --- Especificar
+P119_1 C (1) 119. Características de la ubicación física (Marcar SI o NO 1: Sí
+en todas las alternativas) 2: No
+1. Cercano a zona arqueológica (MC)
+P119_1_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO 999999.99
+en todas las alternativas)
+1. Cercano a zona arqueológica (MC)
+Distancia aproximada en mts.
+P119_2 C (1) 119. Características de la ubicación física (Marcar SI o NO 1: Sí
+en todas las alternativas) 2: No
+2. Cercano a faja marginal (ANA-MINAGRI)
+P119_2_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO 999999.99
+en todas las alternativas)
+2. Cercano a faja marginal (ANA-MINAGRI)
+Distancia aproximada en mts.
+P119_3 C (1) 119. Características de la ubicación física (Marcar SI o NO 1: Sí
+en todas las alternativas) 2: No
+3. Cercano a líneas o torres de alta tensión
+P119_3_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO 999999.99
+en todas las alternativas)
+3. Cercano a líneas o torres de alta tensión
+Distancia aproximada en mts.
+P119_4 C (1) 119. Características de la ubicación física (Marcar SI o NO 1: Sí
+en todas las alternativas) 2: No
+4. Cercano a áreas naturales protegidas (MINAM)
+17
+
+--- PÁGINA 19 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P119_4_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+4. Cercano a áreas naturales protegidas (MINAM)
+Distancia aproximada en mts.
+P119_5 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+5. Inmueble de valor monumental patrimonio histórico
+P119_5_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+5. Inmueble de valor monumental patrimonio histórico
+Distancia aproximada en mts.
+P119_6 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+6. Sobre acumulaciones de agua subterránea a un nivel
+cercano a la superficie (Napa freática)
+P119_6_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+6. Sobre acumulaciones de agua subterránea a un nivel
+cercano a la superficie (Napa freática)
+Distancia aproximada en mts.
+P119_7 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+7. Elevado en zona monumental
+P119_7_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+7. Elevado en zona monumental
+Distancia aproximada en mts.
+P119_8 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+8. Enclavado en ambiente urbano monumental
+P119_8_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+8. Enclavado en ambiente urbano monumental
+Distancia aproximada en mts.
+P119_9 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+9. Cercano a corredor vial del sur (CVS)
+P119_9_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+9. Cercano a corredor vial del sur (CVS)
+Distancia aproximada en mts.
+18
+
+--- PÁGINA 20 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P119_10 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+10. Cercano a circuito petrolero
+P119_10_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+10. Cercano a circuito petrolero
+Distancia aproximada en mts.
+P119_11 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+11. Cercano a una vía de alto tránsito vehicular
+P119_11_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+11. Cercano a una vía de alto tránsito vehicular
+Distancia aproximada en mts.
+P119_12 C (1) 119. Características de la ubicación física (Marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+12. Otro
+P119_12_D N (9,2) 119. Características de la ubicación física (Marcar SI o NO en 999999.99
+todas las alternativas)
+12. Otro
+Distancia aproximada en mts.
+P119_12_OT C (80) 119. Características de la ubicación física (Marcar SI o NO en Texto
+todas las alternativas)
+12. Otro --- Especificar
+P120_1 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+1. Sismos
+P120_1_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+1. Sismos
+Última fecha de ocurrencia
+P120_1_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+1. Sismos
+¿Es mitigable?
+P120_2 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+2. Lluvias intensas
+P120_2_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+2. Lluvias intensas
+Última fecha de ocurrencia
+19
+
+--- PÁGINA 21 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P120_2_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+2. Lluvias intensas
+¿Es mitigable?
+P120_3 C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+3. Sequias
+P120_3_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en todas DD/MM/AAAA
+las alternativas)
+3. Sequias
+Última fecha de ocurrencia
+P120_3_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+3. Sequias
+¿Es mitigable?
+P120_4 C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+4. Actividades volcánicas
+P120_4_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en todas DD/MM/AAAA
+las alternativas)
+4. Actividades volcánicas
+Última fecha de ocurrencia
+P120_4_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+4. Actividades volcánicas
+¿Es mitigable?
+P120_5 C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+5. Inundaciones
+P120_5_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en todas DD/MM/AAAA
+las alternativas)
+5. Inundaciones
+Última fecha de ocurrencia
+P120_5_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+5. Inundaciones
+¿Es mitigable?
+P120_6 C (1) 120. Peligros naturales potenciales (marcar SI o NO en todas 1: Sí
+las alternativas) 2: No
+6. Derrames de sustancias peligrosas
+P120_6_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en todas DD/MM/AAAA
+las alternativas)
+6. Derrames de sustancias peligrosas
+Última fecha de ocurrencia
+20
+
+--- PÁGINA 22 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P120_6_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+6. Derrames de sustancias peligrosas
+¿Es mitigable?
+P120_7 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+7. Tsunamis u oleajes anómalos
+P120_7_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+7. Tsunamis u oleajes anómalos
+Última fecha de ocurrencia
+P120_7_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+7. Tsunamis u oleajes anómalos
+¿Es mitigable?
+P120_8 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+8. Heladas
+P120_8_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+8. Heladas
+Última fecha de ocurrencia
+P120_8_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+8. Heladas
+¿Es mitigable?
+P120_9 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+9. Granizadas
+P120_9_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+9. Granizadas
+Última fecha de ocurrencia
+P120_9_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+9. Granizadas
+¿Es mitigable?
+P120_10 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+10. Vientos fuertes
+P120_10_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+10. Vientos fuertes
+Última fecha de ocurrencia
+21
+
+--- PÁGINA 23 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P120_10_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+10. Vientos fuertes
+¿Es mitigable?
+P120_11 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+11. Incendio forestal/urbano
+P120_11_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+11. Incendio forestal/urbano
+Última fecha de ocurrencia
+P120_11_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+11. Incendio forestal/urbano
+¿Es mitigable?
+P120_12 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+12. Avalanchas
+P120_12_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+12. Avalanchas
+Última fecha de ocurrencia
+P120_12_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+12. Avalanchas
+¿Es mitigable?
+P120_13 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+13. Huaycos
+P120_13_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+13. Huaycos
+Última fecha de ocurrencia
+P120_13_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+13. Huaycos
+¿Es mitigable?
+P120_14 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+14. Deslizamientos
+P120_14_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+14. Deslizamientos
+Última fecha de ocurrencia
+22
+
+--- PÁGINA 24 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P120_14_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+14. Deslizamientos
+¿Es mitigable?
+P120_15 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+15. Erosión
+P120_15_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+15. Erosión
+Última fecha de ocurrencia
+P120_15_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+15. Erosión
+¿Es mitigable?
+P120_16 C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+16. Otro
+P120_16_F C (10) 120. Peligros naturales potenciales (marcar SI o NO en DD/MM/AAAA
+todas las alternativas)
+16. Otro
+Última fecha de ocurrencia
+P120_16_M C (1) 120. Peligros naturales potenciales (marcar SI o NO en 1: Sí
+todas las alternativas) 2: No
+16. Otro
+¿Es mitigable?
+P120_16_OT C (80) 120. Peligros naturales potenciales (marcar SI o NO en Texto
+todas las alternativas)
+16. Otro --- Especificar
+P121_1 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+1. Zona industrial (emanación de gases y desperdicios
+tóxicos)
+P121_2 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+2. Zona minera
+P121_3 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+3. Comercio ambulatorio intenso
+P121_4 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+4. Microcomercialización de droga
+23
+
+--- PÁGINA 25 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_1.dbf
+Variable Formato Descripción de variable Valor de variable
+P121_5 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+5. Inseguridad ciudadana
+P121_6 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+6. Zona agrícola (quema de pastizales, abonos y agua de
+riego)
+P121_7 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+7. Subversión
+P121_8 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+8. Zona de acopio de desperdicios (Relleno sanitario,
+basurales, etc.)
+P121_9 C (1) 121. Peligros potenciales ocasionados por el hombre 1: Sí
+(marcar SI o NO en todas las alternativas) 2: No
+9. Zona portuaria (Aeropuertos, aeródromos,
+embarcaderos, ferroviarios, etc.)
+P122 C (1) 122. ¿Cree que la institución educativa debería ser 1: Sí
+reubicada debido a la existencia de un peligro que no puede 2: No
+ser mitigable?
+P122_1 C (1) 122.1. ¿Cuenta con la disponibilidad de un nuevo terreno 1: Sí
+que ha sido gestionado para el traslado de la IE? 2: No
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+P201_1 C (1) 201. Servicios en el Centro Poblado 1: Sí
+1. Energía eléctrica 2: No
+P201_2 C (1) 201. Servicios en el Centro Poblado 1: Sí
+2. Agua potable 2: No
+P201_3 C (1) 201. Servicios en el Centro Poblado 1: Sí
+3. Desagüe 2: No
+P201_4 C (1) 201. Servicios en el Centro Poblado 1: Sí
+4. Internet 2: No
+P201_5 C (1) 201. Servicios en el Centro Poblado 1: Sí
+5. Posta médica o Centro de Salud 2: No
+P201_6 C (1) 201. Servicios en el Centro Poblado 1: Sí
+6. Comedores populares 2: No
+P201_7 C (1) 201. Servicios en el Centro Poblado 1: Sí
+7. Agencia bancaria 2: No
+P201_8 C (1) 201. Servicios en el Centro Poblado 1: Sí
+8. Biblioteca municipal o comunal 2: No
+24
+
+--- PÁGINA 26 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P201_9 C (1) 201. Servicios en el Centro Poblado 1: Sí
+9. Cabina de internet 2: No
+P201_10 C (1) 201. Servicios en el Centro Poblado 1: Sí
+10. Comisaria 2: No
+P201_11 C (1) 201. Servicios en el Centro Poblado 1: Sí
+11. Servicio de gas 2: No
+P201_12 C (1) 201. Servicios en el Centro Poblado 1: Sí
+12. Teléfono comunal 2: No
+P201_12_T C (15) 201. Servicios en el Centro Poblado 999999999999999
+12. Teléfono comunal
+- Número de teléfono
+Archivo : Loc_P200_ServBa.dbf [ Matriz 08 : Servicios Básicos en el Local Educativo - Agua ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C202
+NUMERO C (1) Número de procedencia de abastecimiento de agua (1:8)
+1: Red pública (agua potable)
+2: Pilón de uso público (agua potable)
+3: Camión cisterna u otro similar
+4: Pozo
+5: Sistema de Captación de agua de lluvia
+6: Río, acequia, manantial u otro
+7: Otro
+8: No tiene
+PREDOMIN C (50) Nombre de la procedencia Texto
+TIPO C (1) Tipo de abastecimiento predominante en el local "X"
+educativo
+TERRENO_1 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 01
+TERRENO_2 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 02
+TERRENO_3 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 03
+TERRENO_4 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 04
+DESCRIP_OT C (80) Descripción de procedencia de abastecimiento de agua Texto
+7: Otro --- Especificar
+EMPRESA_1 C (90) 1. Empresa concesionaria/administradora del servicio Texto
+SUMINIS_1 C (20) 1. Empresa concesionaria/administradora del servicio (0:9),(A:Z)
+- Número de suministro
+25
+
+--- PÁGINA 27 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P200_ServBa.dbf [ Matriz 08 : Servicios Básicos en el Local Educativo - Agua ]
+Variable Formato Descripción de variable Valor de variable
+EMPRESA_2 C (90) 2. Empresa concesionaria/administradora del servicio Texto
+SUMINIS_2 C (20) 2. Empresa concesionaria/administradora del servicio (0:9),(A:Z)
+- Número de suministro
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P203 C (1) 203. El local educativo ¿cuenta el servicio de agua potable 1: Sí
+todos los días de la semana? 2: No
+P203_NO_1 C (1) 203. El local educativo ¿cuenta el servicio de agua potable "X"
+todos los días de la semana?
+- Días a la semana que tiene el servicio
+1: Lunes
+P203_NO_2 C (1) 203. El local educativo ¿cuenta el servicio de agua potable "X"
+todos los días de la semana?
+- Días a la semana que tiene el servicio
+2: Martes
+P203_NO_3 C (1) 203. El local educativo ¿cuenta el servicio de agua potable "X"
+todos los días de la semana?
+- Días a la semana que tiene el servicio
+3: Miércoles
+P203_NO_4 C (1) 203. El local educativo ¿cuenta el servicio de agua potable "X"
+todos los días de la semana?
+- Días a la semana que tiene el servicio
+4: Jueves
+P203_NO_5 C (1) 203. El local educativo ¿cuenta el servicio de agua potable "X"
+todos los días de la semana?
+- Días a la semana que tiene el servicio
+5: Viernes
+P204 C (1) 204. Horario que tiene el servicio de agua potable (1:3)
+1: Todo el día
+2: Solo por algunas horas
+3: Solo durante el horario de clases
+P204_23_1 C (1) 204. Horario que tiene el servicio de agua potable "X"
+Solo por algunas horas/Solo durante el horario de clases
+1: Mañana
+P204_23_1D C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+1: Mañana
+Desde
+P204_23_1H C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+1: Mañana
+Hasta
+26
+
+--- PÁGINA 28 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P204_23_2 C (1) 204. Horario que tiene el servicio de agua potable "X"
+Solo por algunas horas/Solo durante el horario de clases
+2: Tarde
+P204_23_2D C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+2: Tarde
+Desde
+P204_23_2H C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+2: Tarde
+Hasta
+P204_23_3 C (1) 204. Horario que tiene el servicio de agua potable "X"
+Solo por algunas horas/Solo durante el horario de clases
+3: Noche
+P204_23_3D C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+3: Noche
+Desde
+P204_23_3H C (5) 204. Horario que tiene el servicio de agua potable HH:MM
+Solo por algunas horas/Solo durante el horario de clases
+3: Noche
+Hasta
+P205 C (1) 205. ¿El Local Educativo cuenta con bebederos? 1: Sí
+2: No
+P205_B_EST N (5) 205. ¿El Local Educativo cuenta con bebederos? 99999
+Cantidad de bebederos en buen estado
+P205_R_EST N (5) 205. ¿El Local Educativo cuenta con bebederos? 99999
+Cantidad de bebederos en regular estado
+P205_M_EST N (5) 205. ¿El Local Educativo cuenta con bebederos? 99999
+Cantidad de bebederos en mal estado
+27
+
+--- PÁGINA 29 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P200_ServBa.dbf [ Matriz 08 : Servicios Básicos en el Local Educativo - Desagüe ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C206
+NUMERO C (1) Número de tipo de conexión de desagüe (1:8)
+1: Red pública
+2: Río, acequia o canal
+3: Tanque séptico
+4: Biodigestor
+5: Pozo sin tratamiento
+6: Unidades Básicas de Saneamiento con Compostera (UBS-
+C)
+7: Otro
+8: No tiene
+PREDOMIN C (50) Nombre de la procedencia Texto
+TIPO C (1) Tipo de conexión predominante en el local educativo "X"
+TERRENO_1 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 01
+TERRENO_2 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 02
+TERRENO_3 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 03
+TERRENO_4 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 04
+DESCRIP_OT C (80) Descripción de tipo de conexión de desagüe Texto
+7: Otro --- Especificar
+EMPRESA_1 C (90) 1. Empresa concesionaria/administradora del servicio Texto
+28
+
+--- PÁGINA 30 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P200_ServBa.dbf [ Matriz 08 : Servicios Básicos en el Local Educativo - Luz ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C207
+NUMERO C (1) Número de procedencia de abastecimiento de energía eléctrica (1:8)
+1: Red pública (de una empresa distribuidora de energía
+eléctrica)
+2: Generador o motor de municipio
+3: Generador o motor de la comunidad
+4: Generador o motor del local educativo
+5: Panel solar
+6: Energía eólica
+7: Otro
+8: No tiene
+PREDOMIN C (50) Nombre de la procedencia Texto
+TIPO C (1) Tipo de abastecimiento predominante en el local educativo "X"
+TERRENO_1 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 01
+TERRENO_2 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 02
+TERRENO_3 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 03
+TERRENO_4 C (1) Registre por cada terreno (solo si tiene más de 1 terreno) "X"
+Terreno N° 04
+DESCRIP_OT C (80) Descripción de procedencia de abastecimiento de la energía Texto
+eléctrica
+7: Otro --- Especificar
+EMPRESA_1 C (90) 1. Empresa concesionaria/administradora del servicio Texto
+SUMINIS_1 C (20) 1. Empresa concesionaria/administradora del servicio (0:9),(A:Z)
+- Número de suministro
+EMPRESA_2 C (90) 2. Empresa concesionaria/administradora del servicio Texto
+SUMINIS_2 C (20) 2. Empresa concesionaria/administradora del servicio (0:9),(A:Z)
+- Número de suministro
+29
+
+--- PÁGINA 31 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P208 C (1) 208. ¿Qué tipo de sistema eléctrico tiene? 1: Monofásico
+2: Trifásico
+P209 C (1) 209 ¿Cuenta con medidor de suministro de energía eléctrica? 1: Sí
+2: No
+P209_SI_M N (4) 209 ¿Cuenta con medidor de suministro de energía eléctrica? 9999
+Nro. de medidores
+P209_SI_MF N (4) 209 ¿Cuenta con medidor de suministro de energía eléctrica? 9999
+Nro. de medidores en funcionamiento
+P210 C (1) 210. El local educativo ¿cuenta con el servicio de energía 1: Sí
+eléctrica todos los días de la semana? 2: No
+P210_SI_1 C (1) 210. El local educativo ¿cuenta con el servicio de energía "X"
+eléctrica todos los días de la semana?
+¿Días a la semana que tiene el servicio?:
+1. Lunes
+P210_SI_2 C (1) 210. El local educativo ¿cuenta con el servicio de energía "X"
+eléctrica todos los días de la semana?
+¿Días a la semana que tiene el servicio?:
+2. Martes
+P210_SI_3 C (1) 210. El local educativo ¿cuenta con el servicio de energía "X"
+eléctrica todos los días de la semana?
+¿Días a la semana que tiene el servicio?:
+3. Miércoles
+P210_SI_4 C (1) 210. El local educativo ¿cuenta con el servicio de energía "X"
+eléctrica todos los días de la semana?
+¿Días a la semana que tiene el servicio?:
+4. Jueves
+P210_SI_5 C (1) 210. El local educativo ¿cuenta con el servicio de energía "X"
+eléctrica todos los días de la semana?
+¿Días a la semana que tiene el servicio?:
+5. Viernes
+P211 C (1) 211. Horario que tiene el servicio de energía eléctrica (1:3)
+1: Todo el día
+2: Sólo por algunas horas
+3: Sólo durante el horario de clases
+30
+
+--- PÁGINA 32 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P211_23_1 C (1) 211. Horario que tiene el servicio de energía eléctrica "X"
+Sólo por algunas horas/Sólo durante el horario de clases
+1: Mañana
+P211_23_1D C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+1: Mañana
+Desde
+P211_23_1H C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+1: Mañana
+Hasta
+P211_23_2 C (1) 211. Horario que tiene el servicio de energía eléctrica "X"
+Sólo por algunas horas/Sólo durante el horario de clases
+2: Tarde
+P211_23_2D C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+2: Tarde
+Desde
+P211_23_2H C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+2: Tarde
+Hasta
+P211_23_3 C (1) 211. Horario que tiene el servicio de energía eléctrica "X"
+Sólo por algunas horas/Sólo durante el horario de clases
+3: Noche
+P211_23_3D C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+3: Noche
+Desde
+P211_23_3H C (5) 211. Horario que tiene el servicio de energía eléctrica HH:MM
+Sólo por algunas horas/Sólo durante el horario de clases
+3: Noche
+Hasta
+P212 C (1) 212. El Local Educativo ¿tiene una línea de telefonía fija? 1: Sí
+2: No
+P212_1 C (1) 212. El Local Educativo ¿tiene una línea fija? 1: Sí
+212.1. ¿funciona? 2: No
+P212_1_1 C (1) 212. El Local Educativo ¿tiene una línea fija? 1: Sí
+212.1. ¿funciona? 2: No
+212.2. ¿Funciona durante el horario de clase?
+P213 C (1) 213. ¿La línea de telefonía es constante durante la semana? 1: Sí
+2: No
+31
+
+--- PÁGINA 33 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P214_COD C (2) 214. ¿Cuál es el nombre de la empresa que brinda el servicio (01:05)
+de telefonía en el local educativo?
+Código del operador
+P214_OPER C (8) 214. ¿Cuál es el nombre de la empresa que brinda el servicio Texto
+de telefonía en el local educativo?
+Código del operador + ": " + Nombre de operador (Texto)
+01: Bitel
+02: Claro
+03: Entel
+04: Movistar
+05: Otro
+P215_PRE C (3) 215. Registre el número de teléfono del Local Educativo 999
+Prefijo
+P215_TEL C (9) 215. Registre el número de teléfono del Local Educativo 999999999
+Número de teléfono fijo
+P216_1 C (1) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? "X"
+1: Conexión fija
+P216_1_OP C (2) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? (01:05)
+1: Conexión fija
+- Código de operador
+01: Bitel
+02: Claro
+03: Entel
+04: Movistar
+05: Otro
+P216_1_TEL C (9) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? 999999999
+1: Conexión fija
+- Número telefónico
+P216_2 C (1) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? "X"
+2: Conexión móvil
+P216_2_OP C (2) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? (01:05)
+2: Conexión móvil
+- Código de operador
+01: Bitel
+02: Claro
+03: Entel
+04: Movistar
+05: Otro
+P216_2_TEL C (9) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? 999999999
+2: Conexión móvil
+- Número telefónico
+P216_3 C (1) 216. ¿Qué tipo de línea telefónica tiene el director de la IE? "X"
+3: No tiene
+32
+
+--- PÁGINA 34 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P217_1 C (1) 217. Especifique algún número de contacto que permita "X"
+comunicarse con el director de la IE
+1: Conexión Fija
+P217_1_OP C (2) 217. Especifique algún número de contacto que permita (01:05)
+comunicarse con el director de la IE
+1: Conexión fija
+- Código de operador
+01: Bitel
+02: Claro
+03: Entel
+04: Movistar
+05: Otro
+P217_1_TEL C (9) 217. Especifique algún número de contacto que permita 999999999
+comunicarse con el director de la IE
+1: Conexión fija
+- Número telefónico
+P217_2 C (1) 217. Especifique algún número de contacto que permita "X"
+comunicarse con el director de la IE
+2: Conexión móvil
+P217_2_OP C (2) 217. Especifique algún número de contacto que permita (01:05)
+comunicarse con el director de la IE
+2: Conexión móvil
+- Código de operador
+01: Bitel
+02: Claro
+03: Entel
+04: Movistar
+05: Otro
+P217_2_TEL C (9) 217. Especifique algún número de contacto que permita 999999999
+comunicarse con el director de la IE
+2: Conexión móvil
+- Número telefónico
+P218 C (1) 218. El Local Educativo, ¿cuenta con instalación del servicio de 1: Sí
+gas (natural o GLP por balón) 2: No
+P218_1 C (1) 218. El Local Educativo, ¿cuenta con instalación del servicio de 1: Sí
+gas (natural o GLP por balón) 2: No
+218.1. ¿Funciona?
+P218_1_SI C (1) 218. El Local Educativo, ¿cuenta con instalación del servicio de 1: Sí
+gas (natural o GLP por balón) 2: No
+218.1. ¿Funciona?
+- Sí --> 218.2. Funciona durante el horario de clase
+P219 C (1) 219. ¿Cuenta con el medidor? 1: Sí
+2: No
+33
+
+--- PÁGINA 35 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P220 C (1) 220. ¿Tipo de gas? 1: GLP por balón (gas
+licuado de petróleo)
+2: GN (gas natural)
+P221 C (80) 221. Nombre de empresa concesionaria/administradora del Texto
+servicio de gas
+P222 C (1) 222. El Local Educativo ¿Cuenta con servicio de internet? 1: Sí
+2: No
+P222_1 N (3) 222.1. Indique el número de líneas contratadas o disponibles 999
+en este local educativo
+P222_2_1 C (1) 222.2. Si bien el local educativo no cuenta con el servicio de 1: Sí
+internet, atienda las siguientes preguntas: 2: No
+En un contexto presencial regular, el director y/o los
+docentes de los servicios educativos, para sus funciones
+pedagógicas, ¿acceden regularmente a internet dentro del
+local educativo desde sus propios equipos electrónicos (plan
+de datos)?
+P222_2_2 C (1) 222.2. Si bien el local educativo no cuenta con el servicio de 1: Sí
+internet, atienda las siguientes preguntas: 2: No
+En un contexto presencial regular, los estudiantes, para sus
+labores académicas ¿acceden a internet desde tablets con
+plan de datos (chip) adquiridas o dotadas al local educativo?
+(ya sea en el marco de la dotación de aprendo en casa u
+otra)?
+34
+
+--- PÁGINA 36 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P222_Inter.dbf [ Matriz 09 : Servicios de Internet en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (5) Número de pregunta C2223
+NUMERO C (1) Número de orden 9
+P222_3_1 C (8) 1. Número de Línea "Linea" + [Correlativo a
+2 dígitos]
+P222_3_2 C (1) 2. ¿La línea se encuentra activa? 1: Sí
+2: No
+P222_3_3 C (2) 3. Tipo de conexión (01:09)
+01: Red Cableada - ADSL-P (Cable telefónico)
+02: Red Cableada - FTTH (Fibra óptica)
+03: Red Cableada - HFC (Híbrido de fibra+coaxial)
+04: Red Cableada - Cable (Cable coaxial)
+05: Internet Satelital
+06: Red Inalámbrica por WIFI
+07: Red Inalámbrica por Internet Portátil/USB Modem
+08: Red Inalámbrica por Radioenlace
+09: Otro
+P222_3_4 C (2) 4. Empresa operadora que brinda el servicio (01:08)
+01: Movistar/Telefónica Movistar del Perú S.A.A.
+02: Claro
+03: Entel
+04: BITEL/VIETTEL PERU S.A.C
+05: VSAT/MINEDU
+06: LEVEL3
+07: WIN
+08: Otro
+P222_3_5 C (2) 5. Entidad que financia el Servicio (01:11)
+01: MINEDU
+02: Unidad Ejecutora/UGEL/DRE
+03: Gobierno Regional
+04: Gobierno Local/Municipal
+05: MTC (Concesión/Convenio)
+06: Comunidad
+07: Recursos propios de la IE/Autofinanciado por la IE
+08: APAFA/Padres de familia
+09: Personal de la I.E.
+10: Empresa Privada u Organización
+11: Otro
+P222_3_6 N (4) 6. Velocidad contratada Mbps (considere según recibo o 9999
+contrato)
+35
+
+--- PÁGINA 37 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P223 C (1) 223. El Local Educativo ¿cuenta con módulo de conectividad? 1: Sí
+2: No
+P224 C (1) 224. El Local Educativo, ¿cuenta con un tópico para atención 1: Sí
+de primeros auxilios? 2: No
+P224_1 C (1) 224.1 El Tópico, ¿Se encuentra implementado? 1: Sí
+2: No
+P225_1 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+1. La arrojan al camión o triciclo municipal
+P225_2 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+2. La arrojan al camión o triciclo informal
+P225_3 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+3. La entierran
+P225_4 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+4. La queman
+P225_5 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+5. La arrojan a cualquier lugar
+P225_6 C (1) 225. Sobre la eliminación de la basura, marque las "X"
+alternativas que más se ajusten a la realidad
+6. Otro
+P225_6_OT C (80) 225. Sobre la eliminación de la basura, marque las Texto
+alternativas que más se ajusten a la realidad
+6. Otro --- Especificar
+P301 C (1) 301. El local educativo, ¿cuenta con cerco perimétrico? (1:3)
+1: Total
+2: Parcial
+3: No tiene
+P302 N (4) 302. Número de tramos del cerco perimétrico 9999
+36
+
+--- PÁGINA 38 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P302_Cerco.dbf [ Matriz 10 : Cerco Perimétrico ]
+Valor de
+Variable Formato Descripción de variable
+variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C302
+NUMERO C (2) Número de orden 99
+P302_1 C (3) Características del cerco perimétrico del local educativo "T" +
+1. Número de tramo [Correlativo a 2
+dígitos]
+P302_2 C (2) Características del cerco perimétrico del local educativo Ver código en
+2. Tipo de Lindero Tabla 01
+P302_3 N (8,2) Características del cerco perimétrico del local educativo 99999.99
+3. Longitud del tramo (m)
+P302_4 N (8,2) Características del cerco perimétrico del local educativo 99999.99
+4. Altura del tramo (m)
+P302_5 C (1) Características del cerco perimétrico del local educativo 1: Sí
+5. ¿Se encuentra en un límite perimétrico del área 2: No
+asignada al Local Educativo?
+P302_6 C (2) Características del cerco perimétrico del local educativo Ver código en
+6. Material predominante del Tramo Tabla 02
+P302_7 C (2) Características del cerco perimétrico del local educativo Ver código en
+7. Estado de conservación del tramo Tabla 03
+P302_8 C (4) Características del cerco perimétrico del local educativo 9999
+8. Año de ejecución del tramo
+P302_9 C (2) Características del cerco perimétrico del local educativo Ver código en
+9. Entidad ejecutora Tabla 04
+P302_10 C (1) Características del cerco perimétrico del local educativo 1: Sí
+10. ¿Este tramo tiene acceso? 2: No
+P302_11 C (2) Características del cerco perimétrico del local educativo Ver código en
+11. Tipo de acceso en el tramo Tabla 05
+P302_12 C (2) Características del cerco perimétrico del local educativo Ver código en
+12. Estructura de portada de ingreso Tabla 06
+37
+
+--- PÁGINA 39 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P302_Cerco.dbf [ Matriz 10 : Cerco Perimétrico ]
+Variable Formato Descripción de variable Valor de variable
+P302_13 C (1) Características del cerco perimétrico del local educativo 1: Sí
+13. Tiene portón 2: No
+P302_14 C (2) Características del cerco perimétrico del local educativo Ver código en
+14. Material del portón Tabla 07
+P302_15 C (2) Características del cerco perimétrico del local educativo Ver código en
+15. Estado de conservación del portón Tabla 03
+P302_16 C (1) Características de los muros de contención 1: Sí
+16. ¿Cuenta con muro de contención? 2: No
+P302_17 C (1) Características de los muros de contención 1: Sí
+17. ¿Forma parte del cerco perimétrico? 2: No
+P302_18 C (4) Características del cerco perimétrico del local educativo 9999
+18. Año de ejecución del muro de contención
+P302_19 C (2) Características de los muros de contención Ver código en
+19. Entidad ejecutora Tabla 04
+P302_20 C (2) Características de los muros de contención Ver código en
+20. Estructura predominante Tabla 08
+P302_21 C (2) Características de los muros de contención Ver código en
+21. Estado de conservación Tabla 03
+Tabla 01: Códigos de Tabla 02: Códigos de material predominante del tramo
+Tipo de Lindero
+Código Descripción Código Descripción
+Código Descripción
+Ladrillo/Similar/Bloque
+01 07 Cerco prefabricado
+01 Frente de cemento
+Adobe/Tapia/Quincha/
+02 Derecho 02 08 Estera
+Piedra con barro
+03 Fondo
+03 Piedra en bloque 09 Drywall
+04 Izquierdo
+04 Madera 10 Calaminas
+05 Alambre 11 Cerco vivo
+06 Malla metálica
+38
+
+--- PÁGINA 40 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 04: Códigos de
+Tabla 03: Códigos de estados de conservación
+Entidad Ejecutora
+Numerales 7 (del tramo) y 21(del
+Numeral 15 (del portón)
+muro de contención) Código Descripción
+Código Descripción Código Descripción
+01 Gobierno Nacional
+01 Sin daño 01 Buen estado
+02 Gobierno Regional
+02 Fisuras leves 02 Regular estado
+Fisuras moderadas 03 APAFA
+03 03 Mal estado
+o ataques de sales
+Agrietamiento o Entidades
+04 04
+colapso Cooperantes
+05 Empresa Privada
+06 Otro
+Tabla 05: Códigos de Tabla 06: Códigos de Estructura
+Tipo de Acceso en el de la portada
+Tramo Código Descripción
+Código Descripción 01 Concreto armado
+01 Acceso plano
+02 Metálico
+Sólo escalera y
+02 03 Concreto Simple
+rampa
+Sólo rampa (con 04 Madera
+03 una pequeña 05 Piedra
+inclinación) 06 otro
+Tabla 07: Códigos de Tabla 08: Códigos de Sistema Estructural
+Material del Portón predominante del Muro de Contención
+Código Descripción
+Código Descripción
+01 Madera
+01 Concreto reforzado
+02 Mallas Metálicas
+02 Concreto Simple
+03 Rejas Metálicas
+03 Concreto Ciclópeo
+04 Planchas Metálicas Concreto Ciclópeo con columnas
+04
+de refuerzo
+05 Drywall
+Mampostería o bloques de roca
+06 Otro 05
+pegados con concreto
+Muros de gravedad flexible
+(gaviones, prefabricados o criba,
+06
+llantas o neusol, enrocado o
+pedraplén, bolsacreto)
+07 Otro
+39
+
+--- PÁGINA 41 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P303_OtElem.dbf [ Matriz 11 : Otros Elementos en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C303
+NUMERO C (2) Número de orden 99
+P303_1 C (40) 1. Otros Elementos Texto
+Número de orden + ":" + Descripción del elemento (Texto)
+1: Tanque Elevado
+2: Tanque Cisterna
+3: Bomba Sumergible
+4: Tanque Séptico
+5: Tanque Séptico Mejorado
+6: Pararrayos
+7: Sistemas de Paneles Solares
+8: Pozos a Tierra
+9: Cámaras de Videovigilancia
+10: Monitores de Videovigilancia
+11: Grupo Electrógeno
+P303_2 C (1) 2. ¿Tiene? 1: Sí
+2: No
+P303_3_1 N (5) 3. ¿Cuántos tiene? 99999
+1. Total
+P303_3_2 N (5) 3. ¿Cuántos tiene? 99999
+2. En Uso
+P303_4_1 N (5) 4. Cantidad de elementos en uso, según estado de 99999
+conservación:
+1: Bueno
+P303_4_2 N (5) 4. Cantidad de elementos en uso, según estado de 99999
+conservación:
+2: Regular
+P303_4_3 N (5) 4. Cantidad de elementos en uso, según estado de 99999
+conservación:
+3: Malo
+P303_5_1 C (2) 5. Último mantenimiento 99
+1. Mes
+P303_5_2 C (4) 5. Último mantenimiento 9999
+2. Año
+P303_6 N (9,2) 6. Volumen (expresado en m3) 999999.99
+P303_7 C (1) 7. En los 2 últimos años ¿Se ha realizado limpieza y 1: Sí
+desinfección? 2: No
+40
+
+--- PÁGINA 42 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P401 N (4) 401. Número de edificaciones en el local educativo 9999
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C401
+NUMERO C (2) Número de orden 99
+ID_EDIF C (3) 1.Número de edificación "E" + [Correlativo
+a 2 dígitos]
+ID_TERR C (4) 2. ¿En qué terreno se encuentra la edificación? "TE" +
+[Correlativo a 2
+dígitos]
+P401_3 C (1) 3. ¿La edificación se encuentra en uso? 1: Sí
+2: No
+P401_4 C (1) 4. ¿La edificación es un módulo prefabricado? 1: Sí
+2: No
+P401_5_1 C (4) 5. Sobre el módulo prefabricado 9999
+1. Año de instalación
+P401_5_2 C (2) 5. Sobre el módulo prefabricado Ver código en
+2. ¿Cuál es la finalidad del uso del módulo prefabricado? Tabla 01
+P401_6 N (2) 6. Número de pisos 99
+P401_7 N (9,2) 7. Área techada total 999999.99
+P401_8_1 C (4) 8. Datos de construcción de la obra 9999
+1. Año de término
+P401_8_2 C (2) 8. Datos de construcción de la obra Ver código en
+2. Tipo de Entidad Ejecutora Tabla 02
+P401_9 C (2) 9. Sistema Estructural Predominante Ver código en
+Tabla 03
+P401_10_11 C (2) 10. Elementos Estructurales Ver código en
+1. Muros Tabla 03
+1. Material Predominante
+P401_10_12 C (2) 10. Elementos Estructurales Ver código en
+1. Muros Tabla 04
+2. Estado de Conservación
+P401_10_21 C (2) 10. Elementos Estructurales Ver código en
+2. Columnas Tabla 03
+1. Material Predominante
+P401_10_22 C (2) 10. Elementos Estructurales Ver código en
+2. Columnas Tabla 04
+2. Estado de Conservación
+41
+
+--- PÁGINA 43 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P401_10_31 C (2) 10. Elementos Estructurales Ver código en
+3. Vigas Tabla 03
+1. Material Predominante
+P401_10_32 C (2) 10. Elementos Estructurales Ver código en
+3. Vigas Tabla 04
+2. Estado de Conservación
+P401_10_41 C (2) 10. Elementos Estructurales Ver código en
+4. Estructura de Techos Tabla 03
+1. Material Predominante
+P401_10_42 C (2) 10. Elementos Estructurales Ver código en
+4. Estructura de Techos Tabla 04
+2. Estado de Conservación
+P401_11_11 C (2) 11. Elementos No Estructurales Ver código en
+1. Cobertura de Techos Tabla 05
+1. Material Predominante
+P401_11_12 C (2) 11. Elementos No Estructurales Ver código en
+1. Cobertura de Techos Tabla 04
+2. Estado de Conservación
+P401_11_2 C (2) 11. Elementos No Estructurales Ver código en
+- Estado de Conservación Tabla 04
+2. Techo y Entrepisos
+P401_11_3 C (2) 11. Elementos No Estructurales Ver código en
+- Estado de Conservación Tabla 04
+3. Escaleras
+P401_11_4 C (2) 11. Elementos No Estructurales Ver código en
+- Estado de Conservación Tabla 04
+4. Parapetos
+P401_12_1 C (1) 12. La edificación cuenta con RED INTERNA de: 1: Sí
+1. Agua 2: No
+P401_12_2 C (1) 12. La edificación cuenta con RED INTERNA de: 1: Sí
+2. Desagüe 2: No
+P401_12_3 C (1) 12. La edificación cuenta con RED INTERNA de: 1: Sí
+3. Energía Eléctrica 2: No
+P401_13_1 C (1) 13. Formas de Acceso 1: Sí
+1. ¿Tiene acceso directo sin desnivel? 2: No
+P401_13_21 C (1) 13. Formas de Acceso 1: Sí
+2. ¿Tiene rampa de acceso en? 2: No
+1. Primer piso
+P401_13_22 C (1) 13. Formas de Acceso 1: Sí
+2. ¿Tiene rampa de acceso en? 2: No
+2. Todos los pisos
+42
+
+--- PÁGINA 44 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P401_13_3 C (1) 13. Formas de Acceso 1: Sí
+3. ¿Tiene escalera? 2: No
+P401_13_41 C (1) 13. Formas de Acceso 1: Sí
+4. Ascensor 2: No
+1. ¿Tiene?
+P401_13_42 C (1) 13. Formas de Acceso 1: Sí
+4. Ascensor 2: No
+2. ¿Está operativo?
+P401_13_43 C (4) 13. Formas de Acceso 9999
+4. Ascensor
+3. Último año de mantenimiento
+P401_13_5 C (1) 13. Formas de Acceso 1: Sí
+5. ¿Tiene otras formas de acceso? 2: No
+P401_14_1 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+1. ¿Cuenta con ancho mínimo de 1m?
+P401_14_2 N (9,2) 14. En el caso el acceso sea mediante rampa(s), indique si 999999.99
+cuenta con las siguientes características
+2. Longitud (m)
+P401_14_3 N (9,2) 14. En el caso el acceso sea mediante rampa(s), indique si 999999.99
+cuenta con las siguientes características
+3. Desnivel (m)
+P401_14_4 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+4. ¿Los descansos tienen una longitud mínima de largo de
+1.50m?
+P401_14_5 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+5. ¿El piso de la rampa es estable, compacto, uniforme y
+antideslizante?
+P401_14_6 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+6. ¿Tiene pasamanos o baranda a ambos lados?
+P401_14_7 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+7. ¿Los pasamanos tienen una altura de 0.85m o 0.90m?
+P401_14_8 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+8. ¿Tiene un pasamano adicional entre los 0.45m y los
+0.60m de altura?
+43
+
+--- PÁGINA 45 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P401_14_9 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+9. ¿El inicio y final de la rampa tiene un espacio libre de
+1.50m para el giro de una silla de ruedas?
+P401_14_10 C (1) 14. En el caso el acceso sea mediante rampa(s), indique si 1: Sí
+cuenta con las siguientes características 2: No
+10. ¿Cuenta con señalización para personas con
+discapacidad visual? (piso podotáctil)
+P401_15 C (2) 15. ¿Cómo se conectan los espacios interiores en un mismo Ver código en
+piso? Tabla 06
+P401_16_1 C (2) 16. Instalaciones Eléctricas Ver código en
+1. Tipo de Instalación del Cableado Tabla 07
+P401_16_21 N (5) 16. Instalaciones Eléctricas 99999
+2. Tablero
+1. Cantidad
+P401_16_22 C (2) 16. Instalaciones Eléctricas Ver código en
+2. Tablero Tabla 04
+2. Estado de Conservación
+P401_16_31 N (5) 16. Instalaciones Eléctricas 99999
+3. Gabinete de Protección de Circuitos
+1. Cantidad
+P401_16_32 C (2) 16. Instalaciones Eléctricas Ver código en
+3. Gabinete de Protección de Circuitos Tabla 04
+2. Estado de Conservación
+P401_16_41 N (5) 16. Instalaciones Eléctricas 99999
+4. Sistema de Puesta a Tierra
+1. Cantidad
+P401_16_42 C (2) 16. Instalaciones Eléctricas Ver código en
+4. Sistema de Puesta a Tierra Tabla 04
+2. Estado de Conservación
+P401_16_43 C (4) 16. Instalaciones Eléctricas 9999
+4. Sistema de Puesta a Tierra
+3. Último año de mantenimiento
+P401_17_1 C (2) 17. Instalaciones Sanitarias (techos) Ver código en
+- Estado de Conservación Tabla 04
+1. Sistema de captación de agua de lluvias (canaletas)
+P401_17_2 C (2) 17. Instalaciones Sanitarias (techos) Ver código en
+- Estado de Conservación Tabla 04
+2. Sistema de evacuación de agua de lluvias (tuberías)
+P401_18_1 C (2) 18. Comunicaciones Ver código en
+- Estado de Conservación Tabla 04
+1. Sistema de voz y data (telefonía e internet)
+44
+
+--- PÁGINA 46 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P401_19 C (1) 19. La edificación ¿Se encuentra en riesgo de colapso o 1: Sí
+presenta riesgo estructural? 2: No
+P401_20 C (1) 20. ¿Cuenta con un informe o certificado que diagnostique 1: Sí
+esta situación? (Sólo si seleccionó “SI” en el numeral “19”) 2: No
+P401_21 C (1) 21. La edificación es considerada Patrimonio Cultural 1: Sí
+2: No
+P401_22_1 C (1) 22. La edificación cuenta con: 1: Sí
+1. Señalización de seguridad 2: No
+P401_22_2 C (1) 22. La edificación cuenta con: 1: Sí
+2. Alarmas y/o botones de emergencia 2: No
+P401_22_3 C (1) 22. La edificación cuenta con: 1: Sí
+3. Botiquín debidamente equipado 2: No
+P401_22_4 C (1) 22. La edificación cuenta con: 1: Sí
+4. Luces de emergencia operativas 2: No
+P401_23_1 N (5) 23. Extintores 99999
+1. Cantidad Total (Operativos + Inoperativos)
+P401_23_2 N (5) 23. Extintores 99999
+2. Total Operativos
+P401_23_3 N (5) 23. Extintores 99999
+- Según Estado de Conservación
+3. En Buen Estado
+P401_23_4 N (5) 23. Extintores 99999
+- Según Estado de Conservación
+4. Necesitan Reparación
+P401_23_5 N (5) 23. Extintores 99999
+- Según Antigüedad en el Local Educativo
+5. Menos de 1 año
+P401_23_6 N (5) 23. Extintores 99999
+- Según Antigüedad en el Local Educativo
+6. De 1 a 2 años
+P401_23_7 N (5) 23. Extintores 99999
+- Según Antigüedad en el Local Educativo
+7. Más de 2 años
+P401_24_1 N (5) 24. Gabinete Contra Incendios 99999
+1. Cantidad Total (Operativos + Inoperativos)
+P401_24_2 N (5) 24. Gabinete Contra Incendios 99999
+2. Total Operativos
+P401_24_3 N (5) 24. Gabinete Contra Incendios 99999
+- Según Estado de Conservación
+3. En Buen Estado
+P401_24_4 N (5) 24. Gabinete Contra Incendios 99999
+- Según Estado de Conservación
+4. Necesitan Reparación
+45
+
+--- PÁGINA 47 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P401_Edific.dbf [ Matriz 12 : Edificaciones en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P401_24_5 N (5) 24. Gabinete Contra Incendios 99999
+- Según Antigüedad en el Local Educativo
+5. Menos de 1 año
+P401_24_6 N (5) 24. Gabinete Contra Incendios 99999
+- Según Antigüedad en el Local Educativo
+6. De 1 a 2 años
+P401_24_7 N (5) 24. Gabinete Contra Incendios 99999
+- Según Antigüedad en el Local Educativo
+7. Más de 2 años
+P401_25_1 N (5) 25. Detectores de Humo 99999
+1. Cantidad Total (Operativos + Inoperativos)
+P401_25_2 N (5) 25. Detectores de Humo 99999
+2. Total Operativos
+P401_25_3 N (5) 25. Detectores de Humo 99999
+- Según Estado de Conservación
+3. En Buen Estado
+P401_25_4 N (5) 25. Detectores de Humo 99999
+- Según Estado de Conservación
+4. Necesitan Reparación
+P401_25_5 N (5) 25. Detectores de Humo 99999
+- Según Antigüedad en el Local Educativo
+5. Menos de 1 año
+P401_25_6 N (5) 25. Detectores de Humo 99999
+- Según Antigüedad en el Local Educativo
+6. De 1 a 2 años
+P401_25_7 N (5) 25. Detectores de Humo 99999
+- Según Antigüedad en el Local Educativo
+7. Más de 2 años
+Tabla 01: Códigos de la Finalidad Tabla 02: Códigos de Tipo de Entidad Ejecutora
+del Uso del Módulo Prefabricado
+Código Descripción
+Código Descripción
+01 Gobierno Nacional / Proyecto Especial
+Emergencia (ante
+01
+desastres)
+02 Gobierno Regional / Local
+Temporal (durante la
+02 ejecución de una 03 APAFA / Autoconstrucción
+inversión)
+04 Entidades Cooperantes / ONG’s
+03 Permanentes
+05 Empresa Privada
+06 No Especifica
+46
+
+--- PÁGINA 48 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 06: Códigos de Tipo de Tabla 07: Códigos de Tipo
+Tabla 04: Códigos de
+Conexión Interna en un mismo Piso de Instalación de Cableado
+Estado de Conservación
+Código Descripción Código Descripción
+Código Descripción
+01 Circuito canalizado
+01 Directo sin desnivel
+01 Buen Estado
+Circuito sin
+02 Gradas canalizar o sin
+02 Regular Estado 02
+conductor
+03 Rampas
+adecuado
+03 Mal Estado 04 Otros
+03 No especifica
+04 No Aplica
+Tabla 03: Códigos de Sistema Estructural Predominante
+Código Descripción Código Descripción
+Concreto armado – Tipo
+01 06 Madera Estructural
+dual
+Concreto armado – Tipo
+02 07 Acero Estructural
+aporticado
+03 Albañilería confinada 08 Módulo prefabricado - PRONIED
+04 Albañilería sin confinar 09 Módulo prefabricado - Otro
+05 Adobe / Tapial 10 Precario
+11 Otro
+12 No Tiene pero lo Requiere
+Sólo Numeral 10 ---------->
+13 No Tiene pero No lo Requiere
+Tabla 05: Códigos de Material predominante de la Cobertura de los Techos
+Código Descripción Código Descripción
+01 Concreto 06 Calaminón
+02 Madera 07 Caña con barro
+03 Teja 08 Lata o latón
+Fibra de
+04 09 Otro
+cemento
+05 Calamina 10 No Tiene pero lo Requiere
+11 No Tiene pero No lo Requiere
+47
+
+--- PÁGINA 49 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P501_1 N (5) 501. Número de aulas o espacios acondicionados como aulas 99999
+1. Total
+P501_2 N (5) 501. Número de aulas o espacios acondicionados como aulas 99999
+2. Bueno
+P501_3 N (5) 501. Número de aulas o espacios acondicionados como aulas 99999
+3. Regular
+P501_4 N (5) 501. Número de aulas o espacios acondicionados como aulas 99999
+4. Malo
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C501
+NUMERO C (3) Número de orden 999
+ID_EDIF C (3) 1.Número de edificación "E" + [Correlativo
+a 2 dígitos]
+P501_2 N (2) 2. Número de piso 99
+P501_3 C (1) 3. ¿El ambiente se encuentra en uso? 1: Sí
+2: No
+P501_3_1 N (1) 3.1. Cantidad de días en una semana que se usa el ambiente 9
+P501_4_11 C (2) 4. Niveles educativos de la Educación Básica/ETP y/o Ver código en
+Carreras/Programas de la Educación Superior que usan el Tabla 01
+ambiente
+- Cantidad de estudiantes por aula y turno
+1. Turno Mañana
+1. Nivel
+P501_4_12 C (11) 4. Niveles educativos de la Educación Básica/ETP y/o (1:9)-(1:9)-(1:9)-
+Carreras/Programas de la Educación Superior que usan el (1:9)-(1:9)-(1:9) /
+ambiente (A:Z)-(A:Z)-(A:Z)-
+- Cantidad de estudiantes por aula y turno (A:Z)-(A:Z)-(A:Z)
+1. Turno Mañana
+2. Edad/Grado/Ciclo
+P501_4_13 C (1) 4. Niveles educativos de la Educación Básica/ETP y/o (A:Z)
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+1. Turno Mañana
+3. Sección
+48
+
+--- PÁGINA 50 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_4_14 N (6) 4. Niveles educativos de la Educación Básica/ETP y/o 999999
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+1. Turno Mañana
+4. Número de estudiantes
+P501_4_21 C (2) 4. Niveles educativos de la Educación Básica/ETP y/o Ver código en Tabla
+Carreras/Programas de la Educación Superior que usan el 01
+ambiente
+- Cantidad de estudiantes por aula y turno
+2. Turno Tarde
+1. Nivel
+P501_4_22 C (11) 4. Niveles educativos de la Educación Básica/ETP y/o (1:9)-(1:9)-(1:9)-
+Carreras/Programas de la Educación Superior que usan el (1:9)-(1:9)-(1:9) /
+ambiente (A:Z)-(A:Z)-(A:Z)-
+- Cantidad de estudiantes por aula y turno (A:Z)-(A:Z)-(A:Z)
+2. Turno Tarde
+2. Edad/Grado/Ciclo
+P501_4_23 C (1) 4. Niveles educativos de la Educación Básica/ETP y/o (A:Z)
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+2. Turno Tarde
+3. Sección
+P501_4_24 N (6) 4. Niveles educativos de la Educación Básica/ETP y/o 999999
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+2. Turno Tarde
+4. Número de estudiantes
+P501_4_31 C (2) 4. Niveles educativos de la Educación Básica/ETP y/o Ver código en Tabla
+Carreras/Programas de la Educación Superior que usan el 01
+ambiente
+- Cantidad de estudiantes por aula y turno
+3. Turno Noche
+1. Nivel
+P501_4_32 C (11) 4. Niveles educativos de la Educación Básica/ETP y/o (1:9)-(1:9)-(1:9)-
+Carreras/Programas de la Educación Superior que usan el (1:9)-(1:9)-(1:9) /
+ambiente (A:Z)-(A:Z)-(A:Z)-
+- Cantidad de estudiantes por aula y turno (A:Z)-(A:Z)-(A:Z)
+3. Turno Noche
+2. Edad/Grado/Ciclo
+49
+
+--- PÁGINA 51 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_4_33 C (1) 4. Niveles educativos de la Educación Básica/ETP y/o (A:Z)
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+3. Turno Noche
+3. Sección
+P501_4_34 N (6) 4. Niveles educativos de la Educación Básica/ETP y/o 999999
+Carreras/Programas de la Educación Superior que usan el
+ambiente
+- Cantidad de estudiantes por aula y turno
+3. Turno Noche
+4. Número de estudiantes
+P501_4_4 C (60) 4. Niveles educativos de la Educación Básica/ETP y/o (01 … 01-02-03-
+Carreras/Programas de la Educación Superior que usan el 04-05-06-07-08-
+ambiente 09-10-11-12-13-
+- Cantidad de estudiantes por aula y turno 14-15-16-17-18-
+4. Carreras/Programas de Educación Superior (Según lo 19-20)
+declarado en la
+tabla 102)
+P501_5 N (6) 5. Aforo del ambiente 999999
+P501_6 C (1) 6. ¿Tiene forma de cuadrilátero? 1: Sí
+2: No
+P501_7_1 N (8,2) 7. Dimensiones de ambiente 99999.99
+1. Largo (metros lineales)
+P501_7_2 N (8,2) 7. Dimensiones de ambiente 99999.99
+2. Ancho (metros lineales)
+P501_8 C (1) 8. ¿Cuenta con señalización de seguridad? 1: Sí
+2: No
+P501_9_1 N (5) 9. Puertas 99999
+1. Cantidad
+P501_9_2 C (2) 9. Puertas Ver código en
+2. Material Predominante Tabla 02
+P501_9_3 C (2) 9. Puertas Ver código en
+3. Estado de Conservación Tabla 07
+P501_10_1 N (5) 10. Cerraduras 99999
+1. Cantidad
+P501_10_2 C (2) 10. Cerraduras Ver código en
+2. Estado de Conservación Tabla 07
+P501_11_1 N (5) 11. Ventanas 99999
+1. Cantidad
+P501_11_2 C (2) 11. Ventanas Ver código en
+2. Material Predominante del marco de la ventana Tabla 03
+50
+
+--- PÁGINA 52 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_11_3 C (2) 11. Ventanas Ver código en Tabla
+3. Estado de Conservación del marco de la ventana 07
+P501_11_4 C (1) 11. Ventanas 1: Sí
+4. Favorecen la ventilación del ambiente (las ventanas 2: No
+de encuentran
+frente a otras ventanas)
+P501_11_5 C (2) 11. Ventanas Ver código en Tabla
+5. Estado de Conservación de los vidrios 07
+P501_12_1 C (2) 12. Paredes Ver código en Tabla
+1. Material Predominante 04
+P501_12_2 C (2) 12. Paredes Ver código en Tabla
+2. Estado de Conservación 07
+P501_13_1 C (2) 13. Techo Ver código en Tabla
+1. Material Predominante 05
+P501_13_2 C (2) 13. Techo Ver código en Tabla
+2. Estado de Conservación 07
+P501_14_1 C (2) 14. Piso Ver código en Tabla
+1. Material Predominante 06
+P501_14_2 C (2) 14. Piso Ver código en Tabla
+2. Estado de Conservación 07
+P501_15_1 C (1) 15. Instalaciones Eléctricas Internas 1: Sí
+1. ¿Tiene? 2: No
+P501_15_2 C (2) 15. Instalaciones Eléctricas Internas Ver código en Tabla
+2. Estado de Conservación 07
+P501_16 C (1) 16. ¿Cuenta con Conexión a Internet? 1: Sí
+2: No
+P501_17 C (2) 17. Este ambiente de aula de clase es: 01: Regular
+02: Funcional
+P501_18_1 N (5) 18. Mesas Unipersonales 99999
+1. Cantidad Total
+P501_18_2 N (5) 18. Mesas Unipersonales 99999
+- Cantidad por Estado de Conservación
+2. En Buen Estado
+P501_18_3 N (5) 18. Mesas Unipersonales 99999
+- Cantidad por Estado de Conservación
+3. Requiere Mantenimiento
+P501_18_4 N (5) 18. Mesas Unipersonales 99999
+- Cantidad por Estado de Conservación
+4. Requiere Sustituirse
+P501_18_5 N (5) 18. Mesas Unipersonales 99999
+5. Cantidad de Estudiantes que No Tienen Mesas
+Unipersonales
+51
+
+--- PÁGINA 53 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_19_1 N (5) 19. Mesas Múltiples 99999
+1. Cantidad Total
+P501_19_2 N (5) 19. Mesas Múltiples 99999
+- Cantidad por Estado de Conservación
+2. En Buen Estado
+P501_19_3 N (5) 19. Mesas Múltiples 99999
+- Cantidad por Estado de Conservación
+3. Requiere Mantenimiento
+P501_19_4 N (5) 19. Mesas Múltiples 99999
+- Cantidad por Estado de Conservación
+4. Requiere Sustituirse
+P501_19_5 N (5) 19. Mesas Múltiples 99999
+5. Cantidad de Estudiantes que No Tienen Mesas Múltiples
+P501_20 N (5) 20. Carpetas Unipersonales 99999
+- Cantidad Total
+P501_21 N (5) 20. Carpetas Bipersonales 99999
+- Cantidad Total
+P501_22_1 N (5) 22. Sillas 99999
+1. Cantidad Total
+P501_22_2 N (5) 22. Sillas 99999
+- Cantidad por Estado de Conservación
+2. En Buen Estado
+P501_22_3 N (5) 22. Sillas 99999
+- Cantidad por Estado de Conservación
+3. Requiere Mantenimiento
+P501_22_4 N (5) 22. Sillas 99999
+- Cantidad por Estado de Conservación
+4. Requiere Sustituirse
+P501_22_5 N (5) 22. Sillas 99999
+5. Cantidad de Estudiantes que No Tienen Sillas
+P501_23_1 N (5) 23. Pizarras 99999
+1. Cantidad Total
+P501_23_2 N (5) 23. Pizarras 99999
+- Cantidad por Estado de Conservación
+2. En Buen Estado
+P501_23_3 N (5) 23. Pizarras 99999
+- Cantidad por Estado de Conservación
+3. Requiere Mantenimiento
+P501_23_4 N (5) 23. Pizarras 99999
+- Cantidad por Estado de Conservación
+4. Requiere Sustituirse
+52
+
+--- PÁGINA 54 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_24_11 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+1. Escritorio Docente
+1. Cantidad Total
+P501_24_12 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+1. Escritorio Docente
+2. Cantidad en buen estado
+P501_24_13 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+1. Escritorio Docente
+3. Cantidad en regular estado
+P501_24_14 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+1. Escritorio Docente
+4. Cantidad en mal estado
+P501_24_21 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+2. Silla Docente
+1. Cantidad Total
+P501_24_22 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+2. Silla Docente
+2. Cantidad en buen estado
+P501_24_23 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+2. Silla Docente
+3. Cantidad en regular estado
+P501_24_24 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+2. Silla Docente
+4. Cantidad en mal estado
+53
+
+--- PÁGINA 55 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_24_31 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+3. Armario
+1. Cantidad Total
+P501_24_32 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+3. Armario
+2. Cantidad en buen estado
+P501_24_33 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+3. Armario
+3. Cantidad en regular estado
+P501_24_34 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+3. Armario
+4. Cantidad en mal estado
+P501_24_41 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+4. Estante
+1. Cantidad Total
+P501_24_42 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+4. Estante
+2. Cantidad en buen estado
+P501_24_43 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+4. Estante
+3. Cantidad en regular estado
+P501_24_44 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+4. Estante
+4. Cantidad en mal estado
+P501_24_51 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+5. Lockers
+1. Cantidad Total
+P501_24_52 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+5. Lockers
+2. Cantidad en buen estado
+54
+
+--- PÁGINA 56 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_24_53 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+5. Lockers
+3. Cantidad en regular estado
+P501_24_54 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+5. Lockers
+4. Cantidad en mal estado
+P501_24_61 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+6. Exhibidores de Libro
+1. Cantidad Total
+P501_24_62 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+6. Exhibidores de Libro
+2. Cantidad en buen estado
+P501_24_63 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+6. Exhibidores de Libro
+3. Cantidad en regular estado
+P501_24_64 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+6. Exhibidores de Libro
+4. Cantidad en mal estado
+P501_24_71 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+7. Mueble de Kitchenette
+1. Cantidad Total
+P501_24_72 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+7. Mueble de Kitchenette
+2. Cantidad en buen estado
+P501_24_73 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+7. Mueble de Kitchenette
+3. Cantidad en regular estado
+P501_24_74 N (5) 24. Tenencia y estado de conservación del mobiliario en 99999
+uso en los ambientes usados como aula de clase
+7. Mueble de Kitchenette
+4. Cantidad en mal estado
+55
+
+--- PÁGINA 57 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P501_Aulas.dbf [ Matriz 13 : Aulas en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P501_24_81 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+8. Otros Muebles
+1. Cantidad Total
+P501_24_82 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+8. Otros Muebles
+2. Cantidad en buen estado
+P501_24_83 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+8. Otros Muebles
+3. Cantidad en regular estado
+P501_24_84 N (5) 24. Tenencia y estado de conservación del mobiliario en uso en 99999
+los ambientes usados como aula de clase
+8. Otros Muebles
+4. Cantidad en mal estado
+Tabla 02: Códigos de Material
+Tabla 01: Códigos de Niveles Educativos
+predominante de las puertas
+Código Descripción
+Código Descripción
+A1 Inicial Cuna 01 Madera
+A2 Inicial Jardín 02 Mallas metálicas
+03 Rejas metálicas
+A3 Inicial Cuna Jardín
+04 Planchas metálicas
+B0 Primaria
+05 Drywall
+F0 Secundaria
+06 Vidrio
+D1 EBA – Inicial e Intermedio 07 Otro
+D2 EBA - Avanzado 08 No Tiene pero lo Requiere
+09 No Tiene pero No lo Requiere
+E0 Programa de Intervención temprana (PRITE)
+E1 Inicial – Educación Básico Especial (EBE)
+E2 Primaria – Educación Básico Especial (EBE)
+L0 Centro de Educación Técnico Productiva (CETPRO)
+K0 Instituto de Educación Superior Pedagógico
+T0 Instituto de Educación Superior Tecnológico
+M0 Escuela Superior de Formación Artística
+P0 Escuela de Educación Superior Pedagógica
+S0 Escuela de Educación Superior Tecnológica
+56
+
+--- PÁGINA 58 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 03: Códigos de Material Tabla 04: Códigos de Material
+predominante del Marco de la Ventana predominante de las Paredes
+Código Descripción
+Código Descripción
+Carpintería metálica (fierro, 01 Ladrillo o concreto
+01 acero, acero inoxidable, aluminio,
+entre otros)
+02 Adobe o tapial
+02 Carpintería de madera
+03 Quincha
+03 Carpintería de PVC
+Piedra con barro, cal o
+04
+cemento
+Carpintería mixta (varios
+04 05 Madera
+materiales)
+06 Triplay
+05 Otro
+07 Eternit o fibra de concreto
+No Tiene pero lo Requiere
+06
+07 No Tiene pero No lo Requiere 08 Estera, cartón o plástico
+09 Otro
+Tabla 06: Códigos de Material
+Tabla 05: Códigos de Material
+predominante de los Pisos
+predominante de los Techos
+Código Descripción
+Código Descripción
+01 Parquet o madera pulida
+01 Concreto armado
+02 Vinílico, pisopak o similar
+02 Madera
+03 Loseta, cerámico o similar
+03 Teja
+04 Cemento
+04 Fibra de cemento
+05 Madera entablada
+05 Calamina
+06 Tierra
+06 Calaminón
+07 Otro
+07 Eternit
+08 Caña con barro
+09 Lata o latón
+10 Otro
+Tabla 07: Códigos de Estado de
+conservación
+Código Descripción
+01 Buen estado
+02 Regular estado
+03 Mal estado
+04 No Aplica
+57
+
+--- PÁGINA 59 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P601 N (2) 601. Cantidad de otros espacios educativos y de soporte 99
+distintos al aula
+Archivo Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C601
+NUMERO C (3) Número de orden 999
+ID_EDIF C (3) 1.Número de edificación "E" + [Correlativo
+a 2 dígitos]
+P601_2 N (2) 2. Número de piso 99
+P601_3 C (3) 3. Detalle del Espacio Ver código en
+- Código Tabla 01
+P601_4 C (1) 4. ¿El ambiente se encuentra en uso? 1: Sí
+2: No
+P601_5_1 C (33) 5. Niveles educativos de la Educación Básica/ETP y/o (A1 … A1-A2-A3-
+Carreras/Programas de la Educación Superior que usan el B0-F0-D1-D2-E0-
+ambiente E1-E2-L0)
+1. Niveles de Educación Básica y ETP
+P601_5_2 C (60) 5. Niveles educativos de la Educación Básica/ETP y/o (01 … 01-02-03-
+Carreras/Programas de la Educación Superior que usan el 04-05-06-07-08-
+ambiente 09-10-11-12-13-
+2. Carreras/Programas de Educación Superior (Según lo 14-15-16-17-18-
+declarado en la tabla 102) 19-20)
+P601_6 C (1) 6. ¿Tiene forma de cuadrilátero? 1: Sí
+2: No
+P601_7_1 N (8,2) 7. Dimensiones de ambiente 99999.99
+1. Largo (metros lineales)
+P601_7_2 N (8,2) 7. Dimensiones de ambiente 99999.99
+2. Ancho (metros lineales)
+P601_8 C (1) 8. ¿Cuenta con señalización de seguridad? 1: Sí
+2: No
+P601_9_1 N (5) 9. Puertas 99999
+1. Cantidad
+P601_9_2 C (2) 9. Puertas Ver código en
+2. Material Predominante Tabla 02
+P601_9_3 C (2) 9. Puertas Ver código en
+3. Estado de Conservación Tabla 04
+58
+
+--- PÁGINA 60 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+P601_10_1 N (5) 10. Cerraduras 99999
+1. Cantidad
+P601_10_2 C (2) 10. Cerraduras Ver código en Tabla
+2. Estado de Conservación 04
+P601_11_1 N (5) 11. Ventanas 99999
+1. Cantidad
+P601_11_2 C (2) 11. Ventanas Ver código en Tabla
+2. Material Predominante del marco de la ventana 03
+P601_11_3 C (2) 11. Ventanas Ver código en Tabla
+3. Estado de Conservación del marco de la ventana 04
+P601_11_4 C (1) 11. Ventanas 1: Sí
+4. Favorecen la ventilación del ambiente (las ventanas 2: No
+de encuentran
+frente a otras ventanas)
+P601_11_5 C (2) 11. Ventanas Ver código en Tabla
+5. Estado de Conservación de los vidrios 04
+P601_12_1 C (2) 12. Paredes Ver código en Tabla
+1. Material Predominante 05
+P601_12_2 C (2) 12. Paredes Ver código en Tabla
+2. Estado de Conservación 04
+P601_13_1 C (2) 13. Techo Ver código en Tabla
+1. Material Predominante 06
+P601_13_2 C (2) 13. Techo Ver código en Tabla
+2. Estado de Conservación 04
+P601_14_1 C (2) 14. Piso Ver código en Tabla
+1. Material Predominante 07
+P601_14_2 C (2) 14. Piso Ver código en Tabla
+2. Estado de Conservación 04
+P601_15 C (1) 15. ¿Cuenta con Instalaciones Eléctricas? 1: Sí
+2: No
+P601_16 C (1) 16. ¿Cuenta con Instalaciones Sanitarias? 1: Sí
+2: No
+P601_17 C (1) 17. ¿Cuenta con Conexión a Internet? 1: Sí
+2: No
+P601_18_11 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+1. Escritorio
+1. Cantidad Total
+59
+
+--- PÁGINA 61 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+P601_18_12 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+1. Escritorio
+2. Cantidad en buen estado
+P601_18_13 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+1. Escritorio
+3. Cantidad en regular estado
+P601_18_14 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+1. Escritorio
+4. Cantidad en mal estado
+P601_18_21 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+2. Silla
+1. Cantidad Total
+P601_18_22 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+2. Silla
+2. Cantidad en buen estado
+P601_18_23 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+2. Silla
+3. Cantidad en regular estado
+P601_18_24 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+2. Silla
+4. Cantidad en mal estado
+P601_18_31 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+3. Armario
+1. Cantidad Total
+P601_18_32 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+3. Armario
+2. Cantidad en buen estado
+P601_18_33 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+3. Armario
+3. Cantidad en regular estado
+60
+
+--- PÁGINA 62 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+P601_18_34 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+3. Armario
+4. Cantidad en mal estado
+P601_18_41 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+4. Estante
+1. Cantidad Total
+P601_18_42 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+4. Estante
+2. Cantidad en buen estado
+P601_18_43 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+4. Estante
+3. Cantidad en regular estado
+P601_18_44 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+4. Estante
+4. Cantidad en mal estado
+P601_18_51 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+5. Lockers
+1. Cantidad Total
+P601_18_52 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+5. Lockers
+2. Cantidad en buen estado
+P601_18_53 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+5. Lockers
+3. Cantidad en regular estado
+P601_18_54 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+5. Lockers
+4. Cantidad en mal estado
+P601_18_61 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+6. Exhibidores
+1. Cantidad Total
+61
+
+--- PÁGINA 63 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+P601_18_62 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+6. Exhibidores
+2. Cantidad en buen estado
+P601_18_63 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+6. Exhibidores
+3. Cantidad en regular estado
+P601_18_64 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+6. Exhibidores
+4. Cantidad en mal estado
+P601_18_71 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+7. Vitrinas y camillas para tópico
+1. Cantidad Total
+P601_18_72 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+7. Vitrinas y camillas para tópico
+2. Cantidad en buen estado
+P601_18_73 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+7. Vitrinas y camillas para tópico
+3. Cantidad en regular estado
+P601_18_74 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+7. Vitrinas y camillas para tópico
+4. Cantidad en mal estado
+P601_18_81 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+8. Mueble de Kitchenette
+1. Cantidad Total
+P601_18_82 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+8. Mueble de Kitchenette
+2. Cantidad en buen estado
+P601_18_83 N (5) 18. Tenencia y estado de conservación del mobiliario en uso en 99999
+los otros ambientes
+8. Mueble de Kitchenette
+3. Cantidad en regular estado
+62
+
+--- PÁGINA 64 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P601_OtEsp.dbf [ Matriz 14 : Otros espacios educativos distintos al aula ]
+Variable Formato Descripción de variable Valor de variable
+P601_18_84 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+8. Mueble de Kitchenette
+4. Cantidad en mal estado
+P601_18_91 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+9. Otros Muebles
+1. Cantidad Total
+P601_18_92 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+9. Otros Muebles
+2. Cantidad en buen estado
+P601_18_93 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+9. Otros Muebles
+3. Cantidad en regular estado
+P601_18_94 N (5) 18. Tenencia y estado de conservación del mobiliario en 99999
+uso en los otros ambientes
+9. Otros Muebles
+4. Cantidad en mal estado
+Ver Tabla 01 en la página 65
+Tabla 02: Códigos de Material Tabla 03: Códigos de Material predominante del
+predominante de las puertas marco de la ventana
+Código Descripción Código Descripción
+Carpintería metálica (fierro, acero, acero
+01 Madera 01
+inoxidable, aluminio, entre otros)
+02 Mallas metálicas
+02 Carpintería de madera
+03 Rejas metálicas
+03 Carpintería de PVC
+04 Planchas metálicas 04 Carpintería mixta (varios materiales)
+05 Drywall
+05 Otro
+06 Vidrio
+06 No tiene pero lo Requiere
+07 Otro 07 No tiene pero No lo Requiere
+08 No tiene pero lo Requiere
+09 No tiene pero No lo Requiere
+63
+
+--- PÁGINA 65 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 04: Códigos de Estado de Tabla 05: Códigos de Material predominante
+conservación de las paredes
+Código Descripción Código Descripción
+01 Buen estado 01 Ladrillo o concreto
+02 Adobe o tapial
+02 Regular estado
+03 Quincha
+03 Mal estado
+04 Piedra con barro, cal o cemento
+04 No Aplica
+05 Madera
+06 Triplay
+07 Eternit o fibra de concreto
+08 Estera, cartón o plástico
+09 Otro
+Tabla 06: Códigos de Material Tabla 07: Códigos de Material
+predominante de los techos predominante de los pisos
+Código Descripción
+Código Descripción
+01 Parquet o madera pulida
+01 Concreto armado
+02 Vinilico, pisopak o similar
+02 Madera
+03 Loseta, cerámico o similar
+03 Teja
+04 Cemento
+04 Fibra de cemento
+05 Madera entablada
+05 Calamina 06 Tierra
+06 Calaminón
+07 Otro
+07 Eternit
+08 Caña con barro
+09 Lata o latón
+10 Otro
+64
+
+--- PÁGINA 66 ---
+"Año de la unidad, la paz y el desarrollo"
+TABLA 01
+Códigos de Otros Espacios Educativos y de Soporte distintos al Aula
+65
+
+--- PÁGINA 67 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P602 C (1) 602. ¿Los talleres para el área de educación para el trabajo 1: Sí
+cuentan con el equipamiento básico para el desarrollo de la 2: No
+especialidad que oferta?
+P603 C (1) 603. El equipamiento de los talleres para el área de educación 1: Sí
+para el trabajo, ¿se encuentran operativos y en 2: No
+funcionamiento?
+P604 C (1) 604. ¿Su inventario se encuentra registrado en la UGEL? 1: Sí
+2: No
+P605_Q N (5) 605. Respecto a los espacios deportivos abiertos y espacios 99999
+exteriores/de relación con la naturaleza
+- Cantidad de espacios deportivos abiertos y espacios
+exteriores
+Archivo : Loc_P605_OtEspA.dbf [ Matriz 15 : Espacios deportivos abiertos y espacios exteriores ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C605
+NUMERO C (2) Número de orden 99
+P605_1 C (3) 1. Detalle del Espacio Ver código en
+- Código Tabla 01
+P605_2 C (1) 3. ¿El ambiente se encuentra en uso? 1: Sí
+2: No
+P605_3_1 C (33) 2. Niveles educativos de la Educación Básica/ETP y/o (A1 … A1-A2-A3-
+Carreras/Programas de la Educación Superior que usan el B0-F0-D1-D2-E0-
+ambiente E1-E2-L0)
+1. Niveles de Educación Básica y ETP
+P605_3_2 C (60) 2. Niveles educativos de la Educación Básica/ETP y/o (01 … 01-02-03-04-
+Carreras/Programas de la Educación Superior que usan el 05-06-07-08-09-
+ambiente 10-11-12-13-14-
+2. Carreras/Programas de Educación Superior (Según lo 15-16-17-18-19-
+declarado en la 20)
+tabla 102)
+P605_4 C (1) 4. ¿Tiene forma de cuadrilátero? 1: Sí
+2: No
+P605_5_1 N (8,2) 5. Dimensiones de ambiente 99999.99
+1. Largo (metros lineales)
+P605_5_2 N (8,2) 5. Dimensiones de ambiente 99999.99
+2. Ancho (metros lineales)
+P605_6 C (2) 6. Estado de conservación (01:03)
+01: Bueno
+02: Regular
+03: Malo
+66
+
+--- PÁGINA 68 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 01: Códigos de Tipo de espacio abierto o espacio exterior/de relación con la naturaleza
+Código Descripción Código Descripción
+Losa multiuso tipo I 15 x 28 (3 deportes/no
+115 patios) - para Ed. Básica o Ed. Superior o 124 Área de ingreso
+ETP
+Losa multiuso tipo II 20 x 40 (5 deportes/no
+116 patios) - para Ed. Básica o Ed. Superior o 125 Pasadizos y circulaciones
+ETP
+Pista de velocidad y saltos (80 a 120 metros
+117 126 Patio
+lineales) - para Ed. Básica
+118 Piscina semiolímpica sin techar (Ed. Básica) 127 Área de recreación (Ed. Física)
+119 Piscina olímpica sin techar (Ed. Básica) 128 Áreas verdes y jardines (Ed. Básica)
+Campo de fútbol y campo atlético (Ed. Espacio de cultivo (EBR o Ed. Superior o
+120 129
+Básica) ETP)
+Espacio de crianza de animales (EBR o Ed.
+121 Solo campo de fútbol (Ed. Básica) 130
+Superior o ETP)
+122 Solo campo de atlético (Ed. Básica) 131 Tribuna / Gradería
+123 Otro espacio deportivo abierto 132 Otro espacio exterior y de relación
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P606 C (1) 606. Alguno de los espacios deportivos (ya sean cerrados o 1: Sí
+abiertos), ¿se encuentran en concesión? 2: No
+P607 C (1) 607. Alguno de los espacios deportivos (ya sean cerrados o 1: Sí
+abiertos), ¿se encuentra ocupado por alguna infraestructura 2: No
+portátil, u otro?
+P607_SI_OT C (80) 607. Alguno de los espacios deportivos (ya sean cerrados o Texto
+abiertos), ¿se encuentra ocupado por alguna infraestructura
+portátil, u otro?
+- Sí --> Especificar
+P608_1 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+1. Arcos - Futbol
+P608_2 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+2. Arcos con mallas - Futbol
+67
+
+--- PÁGINA 69 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P608_3 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+3. Tableros con aros – Baloncesto
+P608_4 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+4. Aro y malla - Baloncesto
+P608_5 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+5. Parantes - Vóley
+P608_6 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+6. Net - Vóley
+P608_7 C (1) 608. Al menos uno de los espacios deportivos (ya sean "X"
+cerrados o abiertos), ¿cuenta con el siguiente equipamiento
+deportivo?
+7. Ninguno de los anteriores
+P701 N (5) 701. Cantidad de espacios usados como servicios higiénicos 99999
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C701
+NUMERO C (2) Número de orden 99
+ID_EDIF C (3) 1.Número de edificación "E" + [Correlativo a
+2 dígitos]
+P701_2 N (2) 2. Número de piso 99
+P701_3 C (3) 3. Detalle del ambiente usado como servicio higiénico (133:140)
+133: SS.HH. para estudiantes
+134: SS.HH. para docentes
+135: SS.HH. para estudiantes y docentes
+136: SS.HH. para personal administrativo
+137: SS.HH. para Adultos
+138: SS.HH. para personal de Servicio
+139: Vestidores para estudiantes
+140: Vestidores para personal de Servicio
+68
+
+--- PÁGINA 70 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P701_4 C (50) 4. Niveles Educativos que usan el ambiente (A1 … A1-A2-A3-B0-
+F0-D1-D2-E0-E1-E2-
+L0-K0-T0-M0-P0-S0)
+P701_5_1 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+1. ¿La puerta de acceso tiene un ancho libre mínimo de
+1.00m?
+P701_5_2 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+2. ¿El cubículo del inodoro tiene un área con diámetro de
+1.5m para el giro de una silla de ruedas de 360°
+P701_5_3 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+3. ¿Existe un espacio libre de 0.75m x 1.20m al frente de
+cada aparato sanitario para una persona en silla de ruedas?
+P701_5_4 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+4. ¿El cubículo para el inodoro mide, como mínimo, 1.50m x
+2.00m?
+P701_5_5 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+5. ¿La ubicación de los aparatos sanitarios respeta el
+espacio del diámetro de giro de 1.50 m sin incluir el radio de
+giro de la puerta?
+P701_5_6 C (1) 5. Características de los servicios higiénicos para una persona 1: Sí
+con silla de ruedas 2: No
+6. ¿Cuentan con barras de apoyo?
+P701_6 C (2) 6. El ambiente del SS.HH. es usado por: (01:05)
+01: Sólo estudiantes
+02: Docentes y administrativos
+03: Estudiantes y docentes
+04: Otros adultos
+05: Ninguno
+P701_7 C (2) 7. El ambiente del SS.HH. es usado por: (01:05)
+01: Sólo hombres
+02: Sólo mujeres
+03: Mixto
+P701_8_1 C (2) 8. Paredes Ver código en Tabla
+1. Material Predominante 01
+P701_8_2 C (2) 8. Paredes Ver código en Tabla
+2. Estado de Conservación 02
+69
+
+--- PÁGINA 71 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P701_9_1 C (2) 9. Techo Ver código en Tabla
+1. Material Predominante 03
+P701_9_2 C (2) 9. Techo Ver código en Tabla
+2. Estado de Conservación 02
+P701_10_1 C (2) 10. Piso Ver código en Tabla
+1. Material Predominante 04
+P701_10_2 C (2) 10. Piso Ver código en Tabla
+2. Estado de Conservación 02
+P701_11_1 N (5) 11. Sobre las letrinas en los SS.HH. 99999
+- Cantidad de letrinas
+1. Total
+P701_11_2 N (5) 11. Sobre las letrinas en los SS.HH. 99999
+- Cantidad de letrinas
+2. Operativas
+P701_11_3 N (5) 11. Sobre las letrinas en los SS.HH. 99999
+- Letrinas operativas según estado de conservación
+3. Buen estado
+P701_11_4 N (5) 11. Sobre las letrinas en los SS.HH. 99999
+- Letrinas operativas según estado de conservación
+4. Regular estado
+P701_11_5 N (5) 11. Sobre las letrinas en los SS.HH. 99999
+- Letrinas operativas según estado de conservación
+5. Mal estado
+P701_12_1 C(2) 12. Sobre los inodoros y/o wáter en los SS.HH. 01: Niños
+1. El diseño y finalidad de uso de los inodoros y/o wáter 02: Adultos
+de este ambiente es para:
+P701_12_2 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter
+2. Total
+P701_12_3 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter
+3. Operativas
+P701_12_4 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter operativos según estado
+de conservación
+4. Buen estado
+P701_12_5 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter operativos según estado
+de conservación
+5. Regular estado
+70
+
+--- PÁGINA 72 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P701_12_6 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter operativos según estado
+de conservación
+6. Mal estado
+P701_12_7 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+7. Del total de operativos, ¿Cuántos tienen función de
+descarga?
+P701_12_8 N (5) 12. Sobre los inodoros y/o wáter en los SS.HH. 99999
+- Cantidad de inodoros y/o wáter habilitados para una
+persona con discapacidad
+P701_13_11 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+1. Individuales
+- Cantidad de lavatorios/lavamanos individuales
+1. Total
+P701_13_12 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+1. Individuales
+- Cantidad de lavatorios/lavamanos individuales
+2. Operativos
+P701_13_13 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+1. Individuales
+- Cantidad de lavatorios/lavamanos individuales según
+estado de
+conservación
+3. Buen estado
+P701_13_14 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+1. Individuales
+- Cantidad de lavatorios/lavamanos individuales según
+estado de
+conservación
+4. Regular estado
+P701_13_15 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+1. Individuales
+- Cantidad de lavatorios/lavamanos individuales según
+estado de
+conservación
+5. Mal estado
+P701_13_21 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+2. Corridos
+- Cantidad de lavatorios/lavamanos corridos
+1. Total
+71
+
+--- PÁGINA 73 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P701_13_22 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+2. Corridos
+- Cantidad de lavatorios/lavamanos corridos
+2. Operativos
+P701_13_23 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+2. Corridos
+- Cantidad de lavatorios/lavamanos corridos según
+estado de
+conservación
+3. Buen estado
+P701_13_24 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+2. Corridos
+- Cantidad de lavatorios/lavamanos corridos según
+estado de
+conservación
+4. Regular estado
+P701_13_25 N (5) 13. Sobre los lavatorios o lavamanos en los SS.HH. 99999
+2. Corridos
+- Cantidad de lavatorios/lavamanos corridos según
+estado de
+conservación
+5. Mal estado
+P701_14_11 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+- Cantidad de urinarios individuales
+1. Total
+P701_14_12 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+- Cantidad de urinarios individuales
+2. Operativos
+P701_14_13 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+- Cantidad de urinarios individuales operativos según
+estado de
+conservación
+3. Buen estado
+P701_14_14 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+- Cantidad de urinarios individuales operativos según
+estado de
+conservación
+4. Regular estado
+72
+
+--- PÁGINA 74 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P701_SSHH.dbf [ Matriz 16 : Características de los SS.HH. en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P701_14_15 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+- Cantidad de urinarios individuales operativos según
+estado de
+conservación
+5. Mal estado
+P701_14_16 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+1. Urinarios Individuales
+6. Del total de operativos, ¿Cuántos tienen función de
+descarga?
+P701_14_21 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+- Cantidad de urinarios corridos
+1. Total
+P701_14_22 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+- Cantidad de urinarios corridos
+2. Operativos
+P701_14_23 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+- Cantidad de urinarios corridos según estado de
+conservación
+3. Buen estado
+P701_14_24 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+- Cantidad de urinarios corridos según estado de
+conservación
+4. Regular estado
+P701_14_25 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+- Cantidad de urinarios corridos según estado de
+conservación
+5. Mal estado
+P701_14_26 N (5) 14. Sobre los urinarios en los SS.HH. 99999
+2. Urinarios Corridos
+6. Del total de operativos, ¿Cuántos tienen función de
+descarga?
+P701_15 C (1) 15. El espacio de SS.HH. o vestidor, ¿Se encuentra habilitado 1: Sí
+con duchas operativas? 2: No
+P701_16 C (1) 16. ¿Se dispone de agua caliente en el espacio de SS.HH. o 1: Sí
+vestidor? 2: No
+73
+
+--- PÁGINA 75 ---
+"Año de la unidad, la paz y el desarrollo"
+Tabla 01: Códigos de Material Tabla 02: Códigos de Estado de Tabla 03: Códigos de Material
+predominante de las paredes conservación predominante de los techos
+Código Descripción Código Descripción Código Descripción
+01 Ladrillo o concreto 01 Buen estado 01 Concreto armado
+02 Adobe o tapial
+02 Regular estado 02 Madera
+03 Quincha
+03 Mal estado 03 Teja
+Piedra con barro, cal o
+04
+cemento 04 No Aplica 04 Fibra de cemento
+05 Madera 05 Calamina
+06 Triplay 06 Calaminón
+Eternit o fibra de
+07 07 Eternit
+concreto
+08 Caña con barro
+08 Estera, cartón o plástico
+09 Lata o latón
+09 Otro
+10 Otro
+No tiene pero lo
+10
+Requiere No tiene pero lo
+11
+Requiere
+No tiene pero No lo
+11 No tiene pero No lo
+Requiere
+12
+Requiere
+Tabla 04: Códigos de Material
+predominante de los pisos
+Código Descripción
+01 Parquet o madera pulida
+02 Vinílico, pisopak o similar
+Loseta, cerámico o
+03
+similar
+04 Cemento
+05 Madera entablada
+06 Tierra
+07 Otro
+No tiene pero lo
+08
+Requiere
+No tiene pero No lo
+09
+Requiere
+74
+
+--- PÁGINA 76 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P801 C (1) 801. Recursos Tecnológicos 1: Sí
+- ¿Cuenta con al menos un recurso tecnológico de la 2: No
+siguiente lista?
+Archivo : Loc_P801_RecTec.dbf [ Matriz 17 : Recursos Tecnológicos en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C801
+NUMERO C (2) Número de orden (01:12)
+P801_1 C (60) 1. Recurso tecnológico Texto
+Nro. + ": " + Descripción (Texto)
+01: PC de escritorio
+02: Laptop Convencional
+03: Laptop XO
+04: Servidor
+05: Microservidor o Habilitador
+06: Tablet - Aprendo en casa
+07: Tablet - PRONATEL
+08: Tablet - Otros
+09: Proyector multimedia
+10: Pizarra interactiva
+11: Consola de audio para laboratorio de idiomas
+12: Auriculares con audífonos y micrófono
+P801_2 N (5) 2. Cantidad total 99999
+P801_3_1 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+1. Total de operativos
+P801_3_21 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+2. Según estado de conservación
+1. En buen estado
+P801_3_22 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+2. Según estado de conservación
+2. Necesitan reparación
+P801_3_31 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+3. Según antigüedad en el local educativo
+1. Menos de 6 meses
+P801_3_32 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+3. Según antigüedad en el local educativo
+2. De 6 meses a menos de 2 años
+P801_3_33 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+3. Según antigüedad en el local educativo
+3. De 2 a menos de 3 años
+75
+
+--- PÁGINA 77 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P801_RecTec.dbf [ Matriz 17 : Recursos Tecnológicos en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P801_3_34 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+3. Según antigüedad en el local educativo
+4. De 3 a menos de 4 años
+P801_3_35 N (5) 3. Cantidad de recursos tecnológicos operativos 99999
+3. Según antigüedad en el local educativo
+5. De 4 a más años
+P801_4_11 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+1. Conectados por cable
+1. De uso estrictamente pedagógico
+P801_4_12 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+1. Conectados por cable
+2. De uso pedagógico y administrativo
+P801_4_13 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+1. Conectados por cable
+3. De uso estrictamente administrativo
+P801_4_21 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+2. Conectados por wifi
+1. De uso estrictamente pedagógico
+P801_4_22 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+2. Conectados por wifi
+2. De uso pedagógico y administrativo
+P801_4_23 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+2. Conectados por wifi
+3. De uso estrictamente administrativo
+P801_4_31 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+3. No conectados
+1. De uso estrictamente pedagógico
+P801_4_32 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+3. No conectados
+2. De uso pedagógico y administrativo
+P801_4_33 N (5) 4. Cantidad de recursos tecnológicos operativos por tipo de 99999
+conexión a internet, según uso
+3. No conectados
+3. De uso estrictamente administrativo
+76
+
+--- PÁGINA 78 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P802 C (1) 802. Equipamiento 1: Sí
+- ¿Cuenta con al menos un dispositivo de la siguiente lista? 2: No
+Archivo : Loc_P802_Equip.dbf
+[ Matriz 18 : Equipamiento en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C802
+NUMERO C (2) Número de orden (01:16)
+P802_1 C (60) 1. Equipos Texto
+Nro. + ": " + Descripción (Texto)
+01: TV
+02: DVD / BLUERAY
+03: Radio, minicomponente
+04: Equipo de sonido (consolas separadas)
+05. Parlante portátil
+06: Parlante pasivo (necesidad de amplificador para
+funcionar)
+07: Sólo fotocopiadora
+08. Sólo escáner
+09: Sólo impresora
+10: Multifuncional (fotocopia, escanea e imprime)
+11: Pantalla de proyección ECRAN
+12: Kits de robótica educativa
+13: Equipos de talleres ligeros
+14: Equipos de talleres pesados
+15. Equipos de aire acondicionado y/o climatización
+16: Extractores de aire
+P802_2 N (5) 2. Cantidad total 99999
+P802_3_1 N (5) 3. Cantidad de equipos operativos 99999
+1. Total de operativos
+P802_3_21 N (5) 3. Cantidad de equipos operativos 99999
+2. Según estado de conservación
+1. En buen estado
+P802_3_22 N (5) 3. Cantidad de equipos operativos 99999
+2. Según estado de conservación
+2. Necesitan reparación
+P802_3_31 N (5) 3. Cantidad de equipos operativos 99999
+3. Según antigüedad en el local educativo
+1. Menos de 6 meses
+P802_3_32 N (5) 3. Cantidad de equipos operativos 99999
+3. Según antigüedad en el local educativo
+2. De 6 meses a menos de 2 años
+77
+
+--- PÁGINA 79 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P802_Equip.dbf [ Matriz 18 : Equipamiento en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P802_3_33 N (5) 3. Cantidad de equipos operativos 99999
+3. Según antigüedad en el local educativo
+3. De 2 a menos de 3 años
+P802_3_34 N (5) 3. Cantidad de equipos operativos 99999
+3. Según antigüedad en el local educativo
+4. De 3 a menos de 4 años
+P802_3_35 N (5) 3. Cantidad de equipos operativos 99999
+3. Según antigüedad en el local educativo
+5. De 4 a más años
+P802_4_1 N (5) 4. Cantidad de equipos operativos según uso 99999
+1. De uso estrictamente pedagógico
+P802_4_2 N (5) 4. Cantidad de equipos operativos según uso 99999
+2. De uso pedagógico y administrativo
+P802_4_3 N (5) 4. Cantidad de equipos operativos según uso 99999
+3. De uso estrictamente administrativo
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P803 C (1) 803. Equipos de Interconexión y Protección de Energía 1: Sí
+- ¿Cuenta con al menos un equipo de la siguiente lista? 2: No
+Archivo : Loc_P803_IntPro.dbf
+[ Matriz 19 : Equipos de interconexión y protección de energía en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C803
+NUMERO C (2) Número de orden (01:06)
+P803_1 C (60) 1. Equipos de interconexión y protección Texto
+Nro. + ": " + Descripción (Texto)
+01: Switch para pared
+02: Modem
+03: Router
+04: Access Point
+05: UPS
+06: Estabilizadores
+P803_2 N (5) 2. Cantidad total 99999
+P803_3_1 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+1. Total de operativos
+78
+
+--- PÁGINA 80 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P803_IntPro.dbf
+[ Matriz 19 : Equipos de interconexión y protección de energía en el Local Educativo ]
+Variable Formato Descripción de variable Valor de variable
+P803_3_21 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+2. Según estado de conservación
+1. En buen estado
+P803_3_22 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+2. Según estado de conservación
+2. Necesitan reparación
+P803_3_31 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+3. Según antigüedad en el local educativo
+1. Menos de 6 meses
+P803_3_32 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+3. Según antigüedad en el local educativo
+2. De 6 meses a menos de 2 años
+P803_3_33 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+3. Según antigüedad en el local educativo
+3. De 2 a menos de 3 años
+P803_3_34 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+3. Según antigüedad en el local educativo
+4. De 3 a menos de 4 años
+P803_3_35 N (5) 3. Cantidad de equipos de interconexión y protección 99999
+operativos
+3. Según antigüedad en el local educativo
+5. De 4 a más años
+P803_4_1 N (5) 4. Cantidad de equipos de interconexión y protección 99999
+operativos, según número de puertos
+1. De 1 a 4 puertos
+P803_4_2 N (5) 4. Cantidad de equipos de interconexión y protección 99999
+operativos, según número de puertos
+2. De 5 a 8 puertos
+P803_4_3 N (5) 4. Cantidad de equipos de interconexión y protección 99999
+operativos, según número de puertos
+3. De 12 a 16 puertos
+P803_4_4 N (5) 4. Cantidad de equipos de interconexión y protección 99999
+operativos, según número de puertos
+4. De 24 puertos
+P803_4_5 N (5) 4. Cantidad de equipos de interconexión y protección 99999
+operativos, según número de puertos
+5. De 48 puertos
+79
+
+--- PÁGINA 81 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_P901_EduAdm.dbf [ Matriz 20 : Espacios educativos y/o administrativos de I.E. Privada ]
+Variable Formato Descripción de variable Valor de variable
+CODLOCAL C (6) Código de Local Educativo 999999
+NROCED C (2) Número de cedula 11
+CUADRO C (4) Número de pregunta C901
+CODIGO C (3) Código de tipo de espacio educativo y/o administrativo (000:140)
+DESCRIP C (100) Descripción Texto (Ver
+descripción en tabla
+01 de la página 82)
+P901_1 C (1) 1. El local educativo cuenta con: 1: Sí
+2: No
+P901_2_1 N (5) Cantidad de espacios 99999
+2. En uso
+- Estado de conservación
+1. Total
+P901_2_2 N (5) Cantidad de espacios 99999
+2. En uso
+- Estado de conservación
+2. Buen estado
+P901_2_3 N (5) Cantidad de espacios 99999
+2. En uso
+- Estado de conservación
+3. Regular estado
+P901_2_4 N (5) Cantidad de espacios 99999
+2. En uso
+- Estado de conservación
+4. Mal estado
+P901_3_1 N (5) Cantidad de espacios 99999
+3. Sin uso
+- Estado de conservación
+1. Total
+P901_3_2 N (5) Cantidad de espacios 99999
+3. Sin uso
+- Estado de conservación
+2. Buen estado
+P901_3_3 N (5) Cantidad de espacios 99999
+3. Sin uso
+- Estado de conservación
+3. Regular estado
+P901_3_4 N (5) Cantidad de espacios 99999
+3. Sin uso
+- Estado de conservación
+4. Mal estado
+80
+
+--- PÁGINA 82 ---
+"Año de la unidad, la paz y el desarrollo"
+Archivo : Loc_Lineal_2.dbf
+Variable Formato Descripción de variable Valor de variable
+P902 C (1) 902. ¿Los talleres para el área de educación para el trabajo 1: Sí
+cuentan con el equipamiento básico para el desarrollo de la 2: No
+especialidad que oferta?
+P903 C (1) 903. El equipamiento de los talleres para el área de educación 1: Sí
+para el trabajo, ¿se encuentran operativos y en funcionamiento? 2: No
+P904 C (1) 904. Alguno de los espacios deportivos (ya sean cerrados o 1: Sí
+abiertos), ¿se encuentran en concesión? 2: No
+P905 C (1) 905. Alguno de los espacios deportivos (ya sean cerrados o 1: Sí
+abiertos), ¿se encuentra ocupado por alguna infraestructura 2: No
+portátil, u otro?
+P905_SI_OT C (80) 905. Alguno de los espacios deportivos (ya sean cerrados o Texto
+abiertos), ¿se encuentra ocupado por alguna infraestructura
+portátil, u otro?
+- Sí --> Especificar
+P906_1 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+1. Arcos - Fútbol
+P906_2 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+2. Arcos con mallas - Fútbol
+P906_3 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+3. Tableros con aros - Baloncesto
+P906_4 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+4. Aro y malla - Baloncesto
+P906_5 C (1) 906. al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+5. Parantes - Vóley
+P906_6 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+6. Net - Vóley
+P906_7 C (1) 906. Al menos uno de los espacios deportivos (ya sean cerrados "X"
+o abiertos), ¿cuenta con el siguiente equipamiento deportivo?
+7. Ninguno de los anteriores
+ANOTACION C (200) 1000. Anotaciones complementarias que considere importante Texto
+agregar
+81
+
+--- PÁGINA 83 ---
+"Año de la unidad, la paz y el desarrollo"
+TABLA 01
+TIPO DE ESPACIOS EDUCATIVOS Y ADMINSTRATIVOS
+Cód. Descripción
+TIPO A Y D: AULAS Y SALAS
+AUL AULA DE CLASE
+001 SALA O AULA DE PSICOMOTRICIDAD (INICIAL O CEBE O ISP/ESP
+002 AULA VIVENCIAL (CEBE)
+003 SALA EDUCATIVA (PRITE
+004 SALA DE USOS MÚLTIPLES (SUM)
+005 AUDITORIO
+006 SALA DE DANZA (PRIMARIA Y SECUNDARIA)
+007 SALA DE MÚSICA (PRIMARIA Y SECUNDARIA O ESFA)
+008 SALA DE DANZAS FOLCLÓRICAS (ESFA)
+009 SALA DE BALLET (ESFA)
+010 OTRO ESPACIO DE TIPO "A" O "D" O SIMILARES CARACTERÍSTICAS
+TIPO B: AIP Y BIBLIOTECA
+011 BIBLIOTECA TIPO I – 75 M2 O MENOS (PRIMARIA Y SECUNDARIA)
+012 BIBLIOTECA TIPO II – 90 M2 (PRIMARIA Y SECUNDARIA)
+013 BIBLIOTECA TIPO III – 120 M2 O MÁS (PRIMARIA Y SECUNDARIA)
+014 BIBLIOTECA DE EDUCACIÓN SUPERIOR O TÉCNICO PRODUCTIVA
+015 AULA DE INNOVACIÓN PEDAGÓGICA (PRIMARIA Y SECUNDARIA
+016 AULA DE IDIOMAS (ED.SUPERIOR O ETP)
+017 CENTRO DE CÓMPUTO (ED.SUPERIOR O ETP)
+018 CENTRO DE RECURSOS (ED.SUPERIOR O ETP)
+019 OTRO ESPACIO DE TIPO "B" O SIMILARES CARACTERÍSTICAS
+TIPO C: LABORATORIOS Y TALLERES DE EDUCACIÓN
+020 LABORATORIO DE CIENCIA Y TECNOLOGÍA (SECUNDARIA )
+021 TALLER CREATIVO (PRIMARIA)
+022 TALLER DE ARTES ESCÉNICAS (CEBE)
+023 TALLER DE ARTE O CERÁMICA (SECUNDARIA O CEBE)
+024 TALLER DE EDUCACIÓN PARA EL TRABAJO
+025 TALLER DE EDUCACIÓN PARA EL TRABAJO CON ESPECIALIDAD (CONFORMACIÓN TÉCNICA)
+026 TALLER DE REPOSTERÍA Y COCINA (CEBE)
+027 OTRO ESPACIO DE TIPO "C" O SIMILARES CARACTERÍSTICAS PARA ED. BÁSICA
+TIPO C: LABORATORIOS Y TALLERES DE EDUCACIÓN SUPERIOR Y TÉCNICO PRODUCTIVA
+028 LABORATORIO DE IDIOMAS
+029 LABORATORIO DE CIENCIAS
+LABORATORIO MULTIFUNCIONAL , BIOQUÍMICA , MICROBIOLOGÍA , HEMATOLOGÍA E
+030
+INMUNOHEMATOLOGÍA Y/O ANATOMÍA PATOLÓGICA
+031 LABORATORIO DE FARMACIA
+032 LABORATORIO DE SUELOS
+033 LABORATORIO DE CONTROL DE CALIDAD
+034 OTROS TIPOS DE LABORATORIOS PARA ED.SUPERIOR O ETP
+035 TALLER DE EDUCACIÓN PARA EL TRABAJO (EPT)
+036 TALLER DE INFORMÁTICA
+037 TALLER DE CORTE, PEINADO, LACEADO Y TINTADO DE CABELLO
+038 TALLER DE PODOESTÉTICA
+82
+
+--- PÁGINA 84 ---
+"Año de la unidad, la paz y el desarrollo"
+039 TALLER DE LOCUCIÓN RADIAL
+040 TALLER DE RECEPCIÓN HOTELERA
+041 TALLER DE HOTELERÍA
+042 TALLER DE NEUMÁTICA E HIDRÁULICA
+043 TALLER DE CIRCUITOS ELÉCTRICOS Y/O ELECTRÓNICOS
+044 TALLER DE COCINA
+045 TALLER DE REPOSTERÍA
+046 TALLER DE BAR Y COCTELERÍA
+047 TALLER DE HOSPITALIZACIÓN
+048 TALLER DE TERAPIA (MOTRICIDAD, SENSORIAL, AUDIOVISUAL, LENGUAJE, ENTRE OTROS)
+049 TALLER DE DIBUJO TÉCNICO
+050 TALLER DE CORTE, CONFECCIÓN Y PATRONAJE
+051 TALLER DE ESCULTURA
+052 TALLER PINTURA
+053 TALLER DE DIBUJO
+054 TALLER DE MEDICIONES ELÉCTRICAS
+055 TALLER DE MOTORES DE VEHÍCULOS
+056 TALLER DE MECÁNICA DE BANCO, SOLDADURA Y RECTIFICACIONES AUTOMOTRICES
+057 TALLER DE TRANSMISIÓN DE VEHÍCULOS
+058 TALLER DE SOLDADURA
+059 TALLER DE INSTALACIONES ELÉCTRICAS
+060 TALLER DE INSTALACIONES SANITARIAS
+061 TALLER DE JOYERÍA
+062 OTROS TIPOS DE TALLERES PARA ED.SUPERIOR O ETP
+TIPO E: ESPACIOS DEPORTIVOS
+063 GIMNASIO (ED.BÁSICA)
+064 COLISEO POLIDEPORTIVO (ED.BÁSICA)
+065 PISCINA SEMIOLÍMPICA TECHADA (ED.BÁSICA)
+066 PISCINA OLÍMPICA TECHADA (ED.BÁSICA)
+067 OTRO ESPACIO DEPORTIVO CERRADO
+BIENESTAR
+068 QUIOSCO
+069 CAFETERÍA
+070 COMEDOR
+071 COCINA
+072 TÓPICO
+073 LACTARIO (PRITE O ED. SUPERIOR O ETP)
+074 ESPACIO TEMPORAL PARA DOCENTE (INICIAL, PRIMARIA O SECUNDARIA)
+075 RESIDENCIA ESTUDIANTIL (SECUNDARIA)
+076 ESPACIO TEMPORAL PARA ACOMPAÑAMIENTO EN RESIDENCIA ESTUDIANTIL (SECUNDARIA)
+077 MÓDULO DE ACOMPAÑAMIENTO Y CONSEJERÍA (SECUNDARIA CON RESIDENCIA)
+078 COORDINACIÓN DE TUTORÍA (JEC)
+079 SALA EQUIPO SAANEE (CEBE)
+080 SALA PSICOPEDAGÓGICA (CEBE O ED. SUPERIOR)
+081 OFICINA APAFA (CEBE)
+082 UNIDAD DE BIENESTAR Y EMPLEABILIDAD. (ED.SUPERIOR O ETP)
+083 CAPILLA, TEMPLO O SIMILAR. (ED.SUPERIOR O ETP)
+084 OTRO ESPACIO PARA BIENESTAR
+SERVICIOS GENERALES
+83
+
+--- PÁGINA 85 ---
+"Año de la unidad, la paz y el desarrollo"
+085 ALMACÉN GENERAL
+086 DEPÓSITO GENERAL (ED.BÁSICA)
+087 VIGILANCIA O CASETA DE CONTROL
+088 CUARTO DE MÁQUINAS Y CISTERNAS
+089 AMBIENTE PARA ALMACENAMIENTO DE RESIDUOS SÓLIDOS
+090 CUARTO DE LIMPIEZA
+091 CUARTO ELÉCTRICO
+092 GUARDIANÍA (ED.BÁSICA)
+093 MAESTRANZA
+094 MÓDULO DE CONECTIVIDAD (ESPACIO PARA SERVIDOR Y PARA EL SWITCH DE CONEXIONES A INTERNET)
+095 DEPÓSITO DE IMPLEMENTOS DEPORTIVOS
+096 DEPÓSITO DE HERRAMIENTAS Y MATERIALES (TIPO G)
+097 DEPÓSITO DE PRODUCTOS (TIPO G)
+098 OTRO ESPACIO DE SERVICIOS GENERALES
+SERVICIOS GENERALES
+099 DIRECCIÓN / DIRECCIÓN GENERAL
+100 SUBDIRECCIÓN (ED.BÁSICA, ED. SUPERIOR O ETP)
+101 ADMINISTRACIÓN /ÁREA ADMINISTRATIVA
+102 OFICINA DE COORDINACIÓN PEDAGÓGICA (ED.BÁSICA)
+103 ÁREA DE ESPERA Y/O SECRETARIA
+104 ARCHIVO, ECONOMATO Y/O DEPÓSITO DOCUMENTAL
+105 SALA DE DOCENTES / SALA PARA EL PERSONAL DOCENTE
+106 SALA DE REUNIONES
+107 SALA DE PROFESIONALES (CEBE)
+108 UNIDAD ACADÉMICA (ED.SUPERIOR O ETP)
+109 COORDINACIÓN DE PROGRAMAS DE ESTUDIOS (ED.SUPERIOR O ETP)
+110 UNIDAD DE INVESTIGACIÓN (ED.SUPERIOR O ETP)
+111 UNIDAD DE FORMACIÓN CONTINUA (ED.SUPERIOR O ETP)
+112 ÁREA DE CALIDAD (ED.SUPERIOR O ETP)
+113 SECRETARÍA ACADÉMICA (ED.SUPERIOR O ETP)
+114 OTRO ESPACIO DE GESTIÓN ADMINISTRATIVA Y PEDAGÓGICA
+TIPO E: ESPACIOS DEPORTIVOS (ABIERTOS)
+LOSA MULTIUSO TIPO I 15 x 28 (3 DEPORTES/NO PATIOS) - PARA ED. BÁSICA O
+115
+ED. SUPERIOR O ETP.
+116 LOSA MULTIUSO TIPO II 20 x 40 (5 DEPORTES/NO PATIOS) - PARA ED. BÁSICA O ED. SUPERIOR O ETP.
+117 PISTA DE VELOCIDAD Y SALTOS (80 A 120 METROS LINEALES) - PARA ED. BÁSICA
+118 PISCINA SEMIOLÍMPICA SIN TECHAR (ED. BÁSICA)
+119 PISCINA OLÍMPICA SIN TECHAR (ED. BÁSICA)
+120 CAMPO DE FÚTBOL Y CAMPO ATLÉTICO (ED. BÁSICA)
+121 SOLO CAMPO DE FÚTBOL (ED. BÁSICA)
+122 SOLO CAMPO ATLÉTICO (ED. BÁSICA)
+123 OTRO ESPACIO DEPORTIVO ABIERTO
+TIPO F Y G: ESPACIOS EXTERIORES Y DE RELACIÓN CON LA NATURALEZA
+124 ÁREA DE INGRESO
+125 PASADIZOS Y CIRCULACIONES
+126 PATIO
+127 ÁREA DE RECREACIÓN (ED. BÁSICA)
+128 ÁREAS VERDES Y JARDÍNES (ED. BÁSICA)
+129 ESPACIO DE CULTIVO (EBR O ED. SUPERIOR O ETP)
+84
+
+--- PÁGINA 86 ---
+"Año de la unidad, la paz y el desarrollo"
+130 ESPACIO DE CRIANZA DE ANIMALES (EBR O ED. SUPERIOR O ETP)
+131 TRIBUNA / GRADERÍA
+132 OTRO ESPACIO EXTERIOR Y DE RELACIÓN
+SERVICIOS HIGIÉNICOS
+133 SS.HH. PARA ESTUDIANTES
+134 SS.HH. PARA DOCENTES
+135 SS.HH. PARA ESTUDIANTES Y DOCENTES
+136 SS.HH. PARA PERSONAL ADMINISTRATIVO
+137 SS.HH. PARA ADULTOS
+138 SS.HH. PARA PERSONAL DE SERVICIO
+139 VESTIDORES PARA ESTUDIANTES
+140 VESTIDORES PARA PERSONAL DE SERVICIO
+85

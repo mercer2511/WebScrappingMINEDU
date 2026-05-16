@@ -1,0 +1,286 @@
+--- PÁGINA 1 ---
+2023
+Diccionario de Datos
+Padron.dbf
+
+--- PÁGINA 2 ---
+Censo Educativo 2023
+ACUERDO DE USO
+El Padrón de Instituciones Educativas y Programas, en lo sucesivo PADRÓN, es un registro de los
+servicios educativos que se ofrecen a través de todas las instituciones educativas y programas del
+sistema educativo nacional, y que tiene como propósito ofrecer el marco censal de las operaciones
+estadísticas aplicadas por el Sector Educación. Es gestionado por la Unidad de Estadística del
+Ministerio de Educación (UE-MINEDU) y actualizado en coordinación con el personal a cargo de la
+función estadística en las Direcciones Regionales de Educación (DRE), Gerencias Regionales de
+Educación (GRE) y Unidades de Gestión Educativa Local (UGEL).
+Las instituciones educativas se caracterizan en el PADRÓN a través de variables de identificación y
+localización. Las variables de identificación incluyen el código modular, el nombre de la institución,
+nivel educativo y tipo de gestión. A su vez, las variables de localización incluyen el código de local, la
+dirección del local, centro poblado y distrito. Esta información se actualiza continuamente a través de
+la información remitida por las DRE/GRE y UGEL.
+Con relación a las variables de localización es preciso anotar lo siguiente:
+• Que la mayoría de distritos no se encuentran formalmente delimitados, por lo que la ubicación
+geográfica de las instituciones educativas en el PADRÓN tiene como fuente la referencia
+proporcionada por las instancias de gestión educativa descentralizada correspondientes, con el
+único propósito de permitir la consolidación de datos estadísticos.
+• Que, a diferencia de los distritos, los centros poblados carecen de un código único de
+identificación y de un nombre oficial, por lo que el proceso de asignación de un centro
+poblado a una institución educativa es aproximativo y se revisa con base en visitas de campo e
+información secundaria. Como resultado de esta revisión, la categoría de área geográfica puede
+ser también modificada.
+Por lo tanto, se sugiere a los usuarios:
+• Utilizar la base de datos del PADRÓN principalmente con fines estadísticos.
+• Abstenerse de utilizar los datos de ubicación geográfica como límites político-
+administrativos oficiales.
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 2
+
+--- PÁGINA 3 ---
+Censo Educativo 2023
+ESTRUCTURA DE LOS ARCHIVOS DE DATOS
+• Detalle de las cabeceras de la tabla
+1. Variable : Nombre de la variable.
+2. Tipo : Tipo de dato
+“C” : Caracter.
+“N” : Numérico.
+3. Long : Longitud del dato.
+4. Etiqueta : Descripción breve de la variable.
+5. Valores : Valores que puede tomar la variable.
+6. Fte : Fuente de datos de variables descriptivas y de localización de la sección
+Variables Educativas Básicas
+“1” : Reportado y documentado por la UGEL
+“2” : Construido por la Unidad de Estadística.
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 3
+
+--- PÁGINA 4 ---
+Censo Educativo 2023
+CARACTERÍSTICAS DE LA INSTITUCIÓN EDUCATIVA
+Archivo de datos PADRON.dbf
+Variables clave
+VARIABLE TIPO LON ETIQUETA VALORES FTE
+G
+COD_MOD C 7 Código de identificación de la institución 2
+educativa
+ANEXO C 1 Número de anexo 2
+CODLOCAL C 6 Código de identificación del local en que 2
+funciona la institución educativa
+Variables de identificación
+VARIABLE TIPO LON ETIQUETA VALORES FTE
+G
+CEN_EDU C 100 Número y/o nombre de la institución 1
+educativa
+NIV_MOD C 2 Código del nivel educativo y modalidad “A1” : Inicial - Cuna 1
+que ofrece la institución educativa “A2” : Inicial - Jardín
+“A3” : Inicial – Cuna-jardín
+NOTA: La Ley General de Educación “A5” : Inicial – Programa no
+28044 estableció en 2003 la siguiente escolarizado
+estructura del sistema educativo: “B0” : Primaria
+1. Educación Básica Regular (Inicial, “F0” : Secundaria
+Primaria, Secundaria) “D1” : Básica Alternativa –
+2. Educación Básica Alternativa – CEBA Inicial e
+CEBA Intermedio
+3. Educación Básica Especial “D2” : Básica Alternativa –
+4. Educación Superior CEBA Avanzado
+5. Educación Técnico-Productiva - “E0” : Básica Especial - PRITE
+CETPRO “E1” : Básica Especial - Inicial
+“E2” : Básica Especial - Primaria
+“K0” : Instituto Superior
+Pedagógico – ISP
+“P0” : Escuela de Educación
+Superior Pedagógica - EESP
+“T0” : Superior Tecnológica - IST
+“S0” : Escuela de Educación
+Superior Tecnológica - EEST
+“M0” : Superior Artística - ESFA
+“L0” : Técnico Productiva –
+CETPRO
+D_NIV_MOD C 50 Detalle descriptivo de la variable Inicial - Cuna 2
+“niv_mod” Inicial - Jardín
+Inicial – Cuna-jardín
+Inicial – Programa no escolarizado
+Primaria
+Secundaria
+Básica Alternativa – CEBA
+Inicial e Intermedio
+Básica Alternativa – CEBA
+Avanzado Básica
+Especial – PRITE Básica
+Especial – Inicial
+Básica Especial – Primaria
+Superior Pedagógica - ISP
+Escuela de Educación Superior
+Pedagógica - EESP
+Superior Tecnológica - IST
+Escuela de Educación Superior
+Tecnológica Superior Artística -
+ESFA
+Técnico Productiva – CETPRO
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 4
+
+--- PÁGINA 5 ---
+Censo Educativo 2023
+VARIABLE TIPO LONG ETIQUETA VALORES FTE
+COD_CAR C 1 Relación entre el número de docentes y el “1” : Unidocente multigrado 2
+número de secciones que atienden. Sólo “2” : Polidocente multigrado
+aplica a servicios educativos del nivel “3” : Polidocente completo
+primaria. “a” : No aplica
+D_COD_CAR C 25 Detalle descriptivo de la variable Unidocente multigrado 2
+“cod_car” Polidocente multigrado
+Polidocente completo
+No aplica
+FORMA C 1 Código de forma de atención y cómo se “S” : Escolarizada 1
+imparte la enseñanza “N” : No escolarizada
+“a” : No aplica
+NOTA: En el caso de Básica Especial,
+el valor “N” identifica a los PRITE.
+D_FORMA C 20 Detalle descriptivo de la variable Escolarizada 2
+“forma” No escolarizada
+No aplica
+TIPOPROG C 2 Código del tipo de programa no “11” : Ciclo I – Entorno Familiar. 1
+escolarizado de educación inicial “12” : Ciclo I – Entorno
+Comunitario.
+“13” : Ciclo I - Set.
+“14” : Ciclo II – Entorno Familiar.
+“15” : Ciclo II – Entorno
+Comunitario.
+“a” : No aplica
+D_TIPOPROG C 50 Detalle descriptivo de la variable Ciclo I – Entorno Familiar. 2
+“tipoprog” Ciclo I – Entorno Comunitario.
+Ciclo I - Set.
+Ciclo II – Entorno Familiar.
+Ciclo II – Entorno Comunitario.
+No aplica
+GESTIÓN C 1 Código del tipo de Gestión de la “1” : Pública de Gestión Directa 1
+institución educativa “2” : Pública de Gestión Privada
+“3” : Privada
+D_GESTIÓN C 50 Detalle descriptivo de la variable Pública de Gestión Directa 2
+“gestión” Pública de Gestión Privada
+Privada
+GES_DEP C 2 Código de dependencia o entidad que “A1” : Sector Educación 1
+gestiona la institución educativa “A2” : Otro sector público (FF.AA.)
+“A3” : Municipalidad
+“A4” : Entidad privada en convenio
+con Sector Educación
+“B1” : Cooperativo
+“B2” : Comunidad o asociación
+religiosa
+“B3” : Comunidad
+“B4” : Particular
+“B5” : Empresa (Fiscalizado)
+“B6” : Asociación civil / Institución
+benéfica
+D_GES_DEP C 50 Detalle descriptivo de la variable Sector Educación 2
+“ges_dep” Otro sector público (FF.AA.)
+Municipalidad
+Entidad privada en convenio con Sector
+Educación
+Cooperativo
+Comunidad o asociación religiosa
+Comunidad
+Particular
+Empresa (Fiscalizado)
+Asociación civil / Institución benéfica
+TIPSSEXO C 1 Código del sexo de la población escolar “1” : Varones 1
+“2” : Mujeres
+“3” : Mixto
+D_TIPSEXO C 15 Detalle descriptivo de la variable Varones 2
+“tipsexo” Mujeres
+Mixto
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 5
+
+--- PÁGINA 6 ---
+Censo Educativo 2023
+VARIABLE TIPO LONG ETIQUETA VALORES FTE
+COD_TUR C 2 Código del turno en que se imparte el “11” : Sólo en la mañana 1
+servicio educativo “12” : Sólo en la tarde
+“13” : Mañana y tarde
+“14” : Sólo en la noche
+“15” : Mañana, tarde y noche
+“16” : Mañana y noche
+“17” : Tarde y noche
+“20” : Discontinuo
+D_COD_TUR C 30 Detalle descriptivo de la variable Sólo en la mañana 2
+“cod_tur” Sólo en la tarde
+Mañana y tarde
+Sólo en la noche
+Mañana, tarde y noche
+Mañana y noche
+Tarde y noche
+Discontinuo
+DIRECTOR C 90 Nombre del director de la institución NOTA: Dato no verificado con 1
+educativa. registros administrativos.
+TELEFONO C 40 Número telefónico de la institución NOTA: Dato no verificado con 1
+educativa. registros administrativos.
+EMAIL C 50 Dirección de correo electrónico de la NOTA: Dato no verificado con 1
+institución educativa. registros administrativos.
+PAGWEB C 50 Página web de la IE. NOTA: Dato no verificado con 1
+registros administrativos.
+Variables de localización
+VARIABLE TIPO LONG ETIQUETA VALORES FTE
+DIRECCION C 200 Dirección del local en que funciona la 1
+institución educativa.
+LOCALIDAD C 80 Generalmente aplicable en zona urbana. Constituye el conjunto de una o más 1
+Núcleo ubicado al interior o periferia del manzanas agrupadas contiguamente e
+ámbito territorial de una ciudad o identificadas con un nombre y
+metrópoli, donde se ubica la IE. categoría.
+REFERENCIA C 200 Referencia respecto a la ubicación del local Adopta distintos valores sobre zonas 1
+educativo conocidas que faciliten la ubicación del
+predio.
+CODGEO C 6 Código de ubicación geográfica 1/ 1
+DPTO C 15 Departamento 1
+PROV C 40 Provincia 1
+DIST C 60 Distrito 1
+CODOOII C 6 Código de la DRE o UGEL que supervisa 1
+la institución educativa 3/
+DRE_UGEL C 60 Nombre de la DRE o UGEL que 1
+supervisa la institución educativa 4/
+REGION_EDU C 50 Nombre de la Dirección Regional de 1
+Educación (DRE) 2/
+CODCP_INEI C 10 Código del centro poblado con fuente 2
+INEI.
+CODCP_MED C 6 Código del centro poblado en el padrón 2
+de centros poblados con servicio
+educativo de la UE-MINEDU.
+NOTA: Valores revisados continuamente
+con base en visitas de campo e
+información secundaria. Ver Acuerdo de
+Uso.
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 6
+
+--- PÁGINA 7 ---
+Censo Educativo 2023
+VARIABLE TIPO LONG ETIQUETA VALORES FTE
+CEN_POB C 100 Nombre del centro poblado en el padrón de
+centros poblados con servicio educativo de
+la UE-MINEDU.
+NOTA: Valores revisados continuamente
+con base en visitas de campo e
+información secundaria. Ver Acuerdo
+de Uso.
+AREA_CENSO C 1 Código de área geográfica donde está “1” : Urbana 2
+ubicada la IE según la información “2” : Rural
+disponible por la UE-MINEDU.
+DAREACENS C 12 Detalle descriptivo de la variable Urbana 2
+O “AREA_CENSO” Rural
+DIS_VRAEM C 1 Distrito en el valle de los ríos Apurímac, “0” : No VRAEM 2
+Ene y Marañón (VRAEM) “1” : Sí VRAEM - Directa
+“2” : Sí VRAEM - influencia
+DIS_FRONT C 1 Distrito cuenta con Zona de Frontera “0” : No 2
+“1” : Sí
+REGIÖN_NAT C 10 Detalle de la Región Natural donde está Costa 2
+ubicada la institución educativa Sierra
+Selva
+NLAT_IE N 12.6 Coordenada geográfica: latitud donde Varios 2
+estaría ubicado el local educativo
+NLONG_IE N 12.6 Coordenada geográfica: longitud donde Varios 2
+estaría ubicado el local educativo
+ALTITUD N 12.6 Altitud en la que se encuentra ubicado el Varios 2
+local educativo
+IMPUTADO C 1 Identifica la fuente y procedencia de los “1” : “Declarado” 2
+datos del Censo Educativo 2023 para el “2” : “Imputado total”
+servicio educativo “3” : “Imputado parcial”
+1/ INEI (2009). Código de Ubicación Geográfica y Leyes de creación vigentes.
+2/ El ámbito administrativo de la Dirección Regional de Educación puede ser diferente del ámbito geográfico de la región política. 3/
+MINEDU-Unidad de Estadística. Codificador de Regiones y UGEL 2022 y Resoluciones de creación vigentes según RENDUGEL. 4/ Por
+lo general, la UGEL supervisa directamente las instituciones de educación básica y técnico-productiva, mientras que la DRE supervisa
+directamente las instituciones de educación superior no universitaria.
+MINISTERIO DE EDUCACIÓN - Unidad de Estadística 7

@@ -1,0 +1,586 @@
+[
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 4,
+    "tabla": 1,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "LON",
+        "ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        "",
+        "",
+        "G",
+        "",
+        "",
+        ""
+      ],
+      [
+        "CODINST",
+        "C",
+        "8",
+        "Código de identificación de la institución\neducativa",
+        "",
+        "2"
+      ],
+      [
+        "COD_MOD",
+        "C",
+        "7",
+        "Código de identificación del servicio\neducativo",
+        "",
+        "2"
+      ],
+      [
+        "ANEXO",
+        "C",
+        "1",
+        "Número de anexo",
+        "",
+        "2"
+      ],
+      [
+        "CODLOCAL",
+        "C",
+        "6",
+        "Código de identificación del local en que\nfunciona la institución educativa",
+        "",
+        "2"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 4,
+    "tabla": 2,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "LON",
+        "ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        "",
+        "",
+        "G",
+        "",
+        "",
+        ""
+      ],
+      [
+        "CEN_EDU",
+        "C",
+        "100",
+        "Número y/o nombre de la institución\neducativa",
+        "",
+        "1"
+      ],
+      [
+        "NIV_MOD",
+        "C",
+        "2",
+        "Código del nivel educativo y modalidad\nque ofrece la institución educativa\nNOTA: La Ley General de Educación\n28044 estableció en 2003 la siguiente\nestructura del sistema educativo:\n1. Educación Básica Regular (Inicial,\nPrimaria, Secundaria)\n2. Educación Básica Alternativa –\nCEBA\n3. Educación Básica Especial\n4. Educación Superior\n5. Educación Técnico-Productiva -\nCETPRO",
+        "“A1”; “A2”; “A3”; A5”; “B0”:\n“F0”; “D1”; “D2”; “E0”; “E1”; “E2”;\n“K0”; “P0”; “T0”; “S0”; “M0”; “L0”",
+        "1"
+      ],
+      [
+        "D_NIV_MOD",
+        "C",
+        "50",
+        "Detalle descriptivo de la variable\n“niv_mod”",
+        "Inicial - Cuna\nInicial - Jardín\nInicial – Cuna-jardín\nInicial – Programa no escolarizado\nPrimaria\nSecundaria\nBásica Alternativa – CEBA\nInicial e Intermedio\nBásica Alternativa – CEBA\nAvanzado Básica\nEspecial – PRITE Básica\nEspecial – Inicial\nBásica Especial – Primaria\nSuperior Pedagógica - ISP\nEscuela de Educación Superior\nPedagógica - EESP\nSuperior Tecnológica - IST\nEscuela de Educación Superior\nTecnológica Superior Artística -\nESFA\nTécnico Productiva – CETPRO",
+        "2"
+      ],
+      [
+        "COD_CAR",
+        "C",
+        "1",
+        "Relación entre el número de docentes y el\nnúmero de secciones que atienden. Sólo\naplica a servicios educativos del nivel\nprimaria.",
+        "“1” : Unidocente multigrado\n“2” : Polidocente multigrado\n“3” : Polidocente completo\n“a” : No aplica",
+        "2"
+      ],
+      [
+        "D_COD_CAR",
+        "C",
+        "25",
+        "Detalle descriptivo de la variable\n“cod_car”",
+        "Unidocente multigrado\nPolidocente multigrado\nPolidocente completo\nNo aplica",
+        "2"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 5,
+    "tabla": 1,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "LON",
+        "ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        "",
+        "",
+        "G",
+        "",
+        "",
+        ""
+      ],
+      [
+        "FORMA",
+        "C",
+        "1",
+        "Código de forma de atención y cómo se\nimparte la enseñanza",
+        "“S” : Escolarizada\n“N” : No escolarizada\n“a” : No aplica\nNOTA: En el caso de Básica Especial,\nel valor “N” identifica a los PRITE.",
+        "1"
+      ],
+      [
+        "D_FORMA",
+        "C",
+        "20",
+        "Detalle descriptivo de la variable\n“forma”",
+        "Escolarizada\nNo escolarizada\nNo aplica",
+        "2"
+      ],
+      [
+        "TIPOPROG",
+        "C",
+        "2",
+        "Código del tipo de programa no\nescolarizado de educación inicial",
+        "“11” : Ciclo I – Entorno Familiar.\n“12” : Ciclo I – Entorno\nComunitario.\n“13” : Ciclo I - Set.\n“14” : Ciclo II – Entorno Familiar.\n“15” : Ciclo II – Entorno\nComunitario.\n“a” : No aplica",
+        "1"
+      ],
+      [
+        "D_TIPOPROG",
+        "C",
+        "50",
+        "Detalle descriptivo de la variable\n“tipoprog”",
+        "Ciclo I – Entorno Familiar.\nCiclo I – Entorno Comunitario.\nCiclo I - Set.\nCiclo II – Entorno Familiar.\nCiclo II – Entorno Comunitario.\nNo aplica",
+        "2"
+      ],
+      [
+        "GESTIÓN",
+        "C",
+        "1",
+        "Código del tipo de Gestión de la\ninstitución educativa",
+        "“1” : Pública de Gestión Directa\n“2” : Pública de Gestión Privada\n“3” : Privada",
+        "1"
+      ],
+      [
+        "D_GESTIÓN",
+        "C",
+        "50",
+        "Detalle descriptivo de la variable\n“gestión”",
+        "Pública de Gestión Directa\nPública de Gestión Privada\nPrivada",
+        "2"
+      ],
+      [
+        "GES_DEP",
+        "C",
+        "2",
+        "Código de dependencia o entidad que\ngestiona la institución educativa",
+        "“A1” : Sector Educación\n“A2” : Otro sector público (FF.AA.)\n“A3” : Municipalidad\n“A4” : Entidad privada en convenio\ncon Sector Educación\n“B1” : Cooperativo\n“B2” : Comunidad o asociación\nreligiosa\n“B3” : Comunidad\n“B4” : Particular\n“B5” : Empresa (Fiscalizado)\n“B6” : Asociación civil / Institución\nbenéfica",
+        "1"
+      ],
+      [
+        "D_GES_DEP",
+        "C",
+        "50",
+        "Detalle descriptivo de la variable\n“ges_dep”",
+        "Sector Educación\nOtro sector público (FF.AA.)\nMunicipalidad\nEntidad privada en convenio con Sector\nEducación\nCooperativo\nComunidad o asociación religiosa\nComunidad\nParticular\nEmpresa (Fiscalizado)\nAsociación civil / Institución benéfica",
+        "2"
+      ],
+      [
+        "TIPSSEXO",
+        "C",
+        "1",
+        "Código del sexo de la población escolar",
+        "“1” : Varones\n“2” : Mujeres\n“3” : Mixto",
+        "1"
+      ],
+      [
+        "D_TIPSEXO",
+        "C",
+        "15",
+        "Detalle descriptivo de la variable\n“tipsexo”",
+        "Varones\nMujeres\nMixto",
+        "2"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 6,
+    "tabla": 1,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "",
+        "LONG ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        null,
+        null,
+        "",
+        null,
+        null,
+        null
+      ],
+      [
+        "",
+        "",
+        null,
+        "",
+        "",
+        ""
+      ],
+      [
+        "COD_TUR",
+        "C",
+        "2",
+        "Código del turno en que se imparte el\nservicio educativo",
+        "“11” : Sólo en la mañana\n“12” : Sólo en la tarde\n“13” : Mañana y tarde\n“14” : Sólo en la noche\n“15” : Mañana, tarde y noche\n“16” : Mañana y noche\n“17” : Tarde y noche\n“20” : Discontinuo",
+        "1"
+      ],
+      [
+        "D_COD_TUR",
+        "C",
+        "30",
+        "Detalle descriptivo de la variable\n“cod_tur”",
+        "Sólo en la mañana\nSólo en la tarde\nMañana y tarde\nSólo en la noche\nMañana, tarde y noche\nMañana y noche\nTarde y noche\nDiscontinuo",
+        "2"
+      ],
+      [
+        "DIRECTOR",
+        "C",
+        "90",
+        "Nombre del director de la institución\neducativa.",
+        "NOTA: Dato no verificado con\nregistros administrativos.",
+        "1"
+      ],
+      [
+        "TELEFONO",
+        "C",
+        "40",
+        "Número telefónico de la institución\neducativa.",
+        "NOTA: Dato no verificado con\nregistros administrativos.",
+        "1"
+      ],
+      [
+        "EMAIL",
+        "C",
+        "50",
+        "Dirección de correo electrónico de la\ninstitución educativa.",
+        "NOTA: Dato no verificado con\nregistros administrativos.",
+        "1"
+      ],
+      [
+        "PAGWEB",
+        "C",
+        "50",
+        "Página web de la IE.",
+        "NOTA: Dato no verificado con\nregistros administrativos.",
+        "1"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 6,
+    "tabla": 2,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "",
+        "LONG ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        null,
+        null,
+        "",
+        null,
+        null,
+        null
+      ],
+      [
+        "",
+        "",
+        null,
+        "",
+        "",
+        ""
+      ],
+      [
+        "DIRECCION",
+        "C",
+        "200",
+        "Dirección del local en que funciona la\ninstitución educativa.",
+        "",
+        "1"
+      ],
+      [
+        "LOCALIDAD",
+        "C",
+        "80",
+        "Generalmente aplicable en zona urbana.\nNúcleo ubicado al interior o periferia del\námbito territorial de una ciudad o\nmetrópoli, donde se ubica la IE.",
+        "Constituye el conjunto de una o más\nmanzanas agrupadas contiguamente e\nidentificadas con un nombre y\ncategoría.",
+        "1"
+      ],
+      [
+        "REFERENCIA",
+        "C",
+        "200",
+        "Referencia respecto a la ubicación del local\neducativo",
+        "Adopta distintos valores sobre zonas\nconocidas que faciliten la ubicación del\npredio.",
+        "1"
+      ],
+      [
+        "CODGEO",
+        "C",
+        "6",
+        "Código de ubicación geográfica 1/",
+        "",
+        "1"
+      ],
+      [
+        "DPTO",
+        "C",
+        "15",
+        "Departamento",
+        "",
+        "1"
+      ],
+      [
+        "PROV",
+        "C",
+        "40",
+        "Provincia",
+        "",
+        "1"
+      ],
+      [
+        "DIST",
+        "C",
+        "60",
+        "Distrito",
+        "",
+        "1"
+      ],
+      [
+        "CODOOII",
+        "C",
+        "6",
+        "Código de la DRE o UGEL que supervisa\nla institución educativa 3/",
+        "",
+        "1"
+      ],
+      [
+        "DRE_UGEL",
+        "C",
+        "60",
+        "Nombre de la DRE o UGEL que\nsupervisa la institución educativa 4/",
+        "",
+        "1"
+      ],
+      [
+        "REGION_EDU",
+        "C",
+        "50",
+        "Nombre de la Dirección Regional de\nEducación (DRE) 2/",
+        "",
+        "1"
+      ],
+      [
+        "CODCP_INEI",
+        "C",
+        "10",
+        "Código del centro poblado con fuente\nINEI.",
+        "",
+        "2"
+      ],
+      [
+        "CODCP_MED",
+        "C",
+        "6",
+        "Código del centro poblado en el padrón\nde centros poblados con servicio\neducativo de la UE-MINEDU.\nNOTA: Valores revisados continuamente\ncon base en visitas de campo e\ninformación secundaria. Ver Acuerdo de\nUso.",
+        "",
+        "2"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 7,
+    "tabla": 1,
+    "filas": [
+      [
+        "VARIABLE",
+        "TIPO",
+        "",
+        "LONG ETIQUETA",
+        "VALORES",
+        "FTE"
+      ],
+      [
+        null,
+        null,
+        "",
+        null,
+        null,
+        null
+      ],
+      [
+        "",
+        "",
+        null,
+        "",
+        "",
+        ""
+      ],
+      [
+        "CEN_POB",
+        "C",
+        "100",
+        "Nombre del centro poblado en el padrón de\ncentros poblados con servicio educativo de\nla UE-MINEDU.\nNOTA: Valores revisados continuamente\ncon base en visitas de campo e\ninformación secundaria. Ver Acuerdo\nde Uso.",
+        "",
+        "1"
+      ],
+      [
+        "AREA_CENSO",
+        "C",
+        "1",
+        "Código de área geográfica del centro\npoblado donde está ubicada la IE\nclasificado para las asignaciones\ntemporales 2024, asignado al servicio\neducativo por el código del centro poblado\n(CODCP_MED) del Padrón Marco del\nCenso Educativo:",
+        "“1” = Urbano\n“2” = Rural\nNota: No necesariamente coincide con\nlos padrones de asignaciones temporales\n2024, elaborados con el Padrón de\nII.EE. del 22-11-2023.",
+        "2"
+      ],
+      [
+        "DAREACENS\nO",
+        "C",
+        "12",
+        "Detalle descriptivo de la variable\n“AREA_CENSO”",
+        "Urbana\nRural",
+        "2"
+      ],
+      [
+        "DIS_VRAEM",
+        "C",
+        "1",
+        "Distrito en el valle de los ríos Apurímac,\nEne y Marañón (VRAEM según DS\nN°133-2022-PCM)",
+        "“0” : No VRAEM\n“1” : Sí VRAEM - Directa\n“2” : Sí VRAEM - influencia",
+        "2"
+      ],
+      [
+        "DIS_FRONT",
+        "C",
+        "1",
+        "Dentro de los 84 distritos de Frontera, que\ncolindan con una frontera internacional.",
+        "“0” : No\n“1” : Sí",
+        "2"
+      ],
+      [
+        "AMB_PETRO",
+        "C",
+        "1",
+        "IIEE se ubica en ámbito petrolero\nDecreto Supremo N° 139-2019-PCM, del\n28 de julio de 2019. Decreto Supremo que\ndeclara de prioridad y urgencia nacional la\nelaboración de un Diagnóstico y un Plan de\nCierre de Brechas para la población del\námbito petrolero de las provincias de\nDatem del Marañón, Loreto, Alto\nAmazonas, Requena y Maynas, del\ndepartamento de Loreto.",
+        "0 = Distrito no es Ámbito Petrolero\n1 = Distrito de Ámbito Petrolero",
+        "2"
+      ],
+      [
+        "REGIÖN_NAT",
+        "C",
+        "10",
+        "Región natural a la que pertenece el\ndistrito, proporcionado por el INEI el 15 de\noctubre 2024 mediante el OFICIO N°\n0006975-2024-INEI/DNCE.",
+        "1 = Costa\n2 = Sierra\n3 = Selva Baja\n4 = Selva Alta",
+        "2"
+      ],
+      [
+        "NLAT_IE",
+        "N",
+        "18.17",
+        "Coordenadas Geográficas (WGS84)\ndecimales. Latitud del punto de ubicación\nde referencia del local educativo. Por lo\ngeneral es el centro del patio o el frente del\nlocal.",
+        "Varios",
+        "2"
+      ],
+      [
+        "NLONG_IE",
+        "N",
+        "18.17",
+        "Coordenadas Geográficas (WGS84)\ndecimales. Longitud del punto de ubicación\nde referencia del local educativo. Por lo\ngeneral es el centro del patio o el frente del\nlocal.",
+        "Varios",
+        "2"
+      ],
+      [
+        "ALTITUD",
+        "N",
+        "12.6",
+        "Altitud medida en metros sobre el nivel\ndel mar (m.s.n.m.) del punto de\nubicación de referencia del local\neducativo. Por lo general es el centro del\npatio o el frente del local.",
+        "Varios",
+        "2"
+      ],
+      [
+        "FTE_LOCAL",
+        "C",
+        "17",
+        "Fuente de procedencia de las\ncoordenadas del local educativo:",
+        "GPS_OTRAS_FUENTES:\nLevantadas con GPS por otras\nentidades u oficinas\nMED_GPS: Levantadas con GPS por\nla Unidad de Estadística in situ\nMED_RIE: Registradas por la\nUGEL en el Registro de Instituciones\nEducativas (RIE)\nUBICACION_WEB: Levantadas por\nla UGEL/DRE en la aplicación de\ngeorreferenciación web \"Editor de\nubicación de SSEE\"\nUBICACION_WEB_MED:\nLevantadas por directores de IE y\nespecialistas del Minedu en la\naplicación de georreferenciación web",
+        "2"
+      ]
+    ]
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "pagina": 8,
+    "tabla": 1,
+    "filas": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "\"Editor de ubicación de SSEE\"\nUGEL_GPS: Levantadas con GPS por\nla UGEL/DRE in situ",
+        ""
+      ],
+      [
+        "TIPOCOORD",
+        "C",
+        "1",
+        "Tipo de coordenadas del local educativo:",
+        "0 = sin coordenadas; 1 = solo cuenta\ncon coordenadas de referencia del\ncentro poblado; 2 = Cuenta con\ncoordenadas tomadas en el local\neducativo.",
+        "2"
+      ],
+      [
+        "IMPUTADO",
+        "C",
+        "1",
+        "Identifica la fuente y procedencia de los\ndatos del Censo Educativo 2023 para el\nservicio educativo",
+        "“1” : “Declarado”\n“2” : “Imputado total”\n“3” : “Imputado parcial”",
+        "2"
+      ]
+    ]
+  }
+]

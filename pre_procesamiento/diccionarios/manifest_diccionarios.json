@@ -1,0 +1,102 @@
+[
+  {
+    "año": "2023",
+    "pdf": "00 Diccionario de Datos CE 2023 Resultados.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2023\\00 Diccionario de Datos CE 2023 Resultados.pdf",
+    "paginas_pdf": 117,
+    "paginas_con_texto": 116,
+    "tablas_detectadas": 248,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_ce_2023_resultados.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_ce_2023_resultados_tablas.json"
+  },
+  {
+    "año": "2023",
+    "pdf": "00_Diccionario de Datos CE 2023.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2023\\00_Diccionario de Datos CE 2023.pdf",
+    "paginas_pdf": 1022,
+    "paginas_con_texto": 1021,
+    "tablas_detectadas": 1483,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_ce_2023.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_ce_2023_tablas.json"
+  },
+  {
+    "año": "2023",
+    "pdf": "00_Diccionario de datos LE 2023.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2023\\00_Diccionario de datos LE 2023.pdf",
+    "paginas_pdf": 86,
+    "paginas_con_texto": 85,
+    "tablas_detectadas": 128,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_le_2023.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_de_datos_le_2023_tablas.json"
+  },
+  {
+    "año": "2023",
+    "pdf": "00_Diccionario marco censal 2023.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2023\\00_Diccionario marco censal 2023.pdf",
+    "paginas_pdf": 7,
+    "paginas_con_texto": 7,
+    "tablas_detectadas": 6,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_marco_censal_2023.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2023\\00_diccionario_marco_censal_2023_tablas.json"
+  },
+  {
+    "año": "2024",
+    "pdf": "00 Diccionario de Datos CE 2024 Resultados.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2024\\00 Diccionario de Datos CE 2024 Resultados.pdf",
+    "paginas_pdf": 123,
+    "paginas_con_texto": 122,
+    "tablas_detectadas": 148,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_ce_2024_resultados.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_ce_2024_resultados_tablas.json"
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario de Datos CE 2024.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2024\\00_Diccionario de Datos CE 2024.pdf",
+    "paginas_pdf": 809,
+    "paginas_con_texto": 808,
+    "tablas_detectadas": 1390,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_ce_2024.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_ce_2024_tablas.json"
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario de datos_LE_2024.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2024\\00_Diccionario de datos_LE_2024.pdf",
+    "paginas_pdf": 93,
+    "paginas_con_texto": 92,
+    "tablas_detectadas": 234,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_le_2024.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_de_datos_le_2024_tablas.json"
+  },
+  {
+    "año": "2024",
+    "pdf": "00_Diccionario marco censal 2024.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2024\\00_Diccionario marco censal 2024.pdf",
+    "paginas_pdf": 8,
+    "paginas_con_texto": 8,
+    "tablas_detectadas": 7,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_marco_censal_2024.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2024\\00_diccionario_marco_censal_2024_tablas.json"
+  },
+  {
+    "año": "2025",
+    "pdf": "00_Diccionario de datos_CE_2025.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2025\\00_Diccionario de datos_CE_2025.pdf",
+    "paginas_pdf": 886,
+    "paginas_con_texto": 885,
+    "tablas_detectadas": 1654,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2025\\00_diccionario_de_datos_ce_2025.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2025\\00_diccionario_de_datos_ce_2025_tablas.json"
+  },
+  {
+    "año": "2025",
+    "pdf": "00_Diccionario de datos_LE_2025.pdf",
+    "ruta_pdf": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\minedu\\descargas\\2025\\00_Diccionario de datos_LE_2025.pdf",
+    "paginas_pdf": 123,
+    "paginas_con_texto": 122,
+    "tablas_detectadas": 181,
+    "salida_texto": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2025\\00_diccionario_de_datos_le_2025.txt",
+    "salida_tablas": "C:\\Users\\leona\\PycharmProjects\\WebScrappingMINEDU\\pre_procesamiento\\diccionarios\\2025\\00_diccionario_de_datos_le_2025_tablas.json"
+  }
+]
